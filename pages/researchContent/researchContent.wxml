@@ -1,0 +1,35 @@
+
+<view class="res-box">
+  <text class="res-title">
+   {{research.title}}
+  </text>
+  <view class="res-con">
+   {{research.description}}
+  </view>
+</view>
+
+<scroll-view>
+<view class="count-people">参与人数: {{research.totalCount}}人</view>
+<block wx:for="{{research.subtopics}}" wx:key="key">
+ <view class="count-30" wx:if="{{item.type!=3}}">
+      <view class="res-ctitle">{{item.priority}}、{{item.title}}</view>
+      <block wx:for="{{item.voteItems}}" wx:key="key">
+       <view class="res-count">
+            {{item.title}}
+           <text class="blue-size">({{item.voteCount}}票)</text>
+          <text>- {{item.percent}}%</text>
+          </view>
+          </block>
+  </view>
+ <view class="count-30" wx:if="{{item.type==3}}" wx:key="key">
+      <view class="res-ctitle">{{item.priority}}、{{item.title}}</view>
+      <block wx:for="{{item.voteReplys}}" wx:key="key">
+       <view class="res-count">
+            {{item.reply}}
+          </view>
+          </block>
+  </view>
+</block>
+
+
+</scroll-view>

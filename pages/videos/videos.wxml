@@ -1,0 +1,40 @@
+<view class="container">
+  <view class="title">
+    <text class="content">组织</text>
+  </view>
+  
+
+  <view class="announce" bindtap="bindViewTapContent">
+  <image  class='icon' src="../../icons/img5.png"></image>
+   <view class="name" >党员档案</view>
+   <image src="../../icons/right-back.png" class="r-back"> </image>
+</view>
+  
+    <view class="announce" bindtap="bindViewTapCommenmorate">
+  <image  class='icon' src="../../icons/img7.png"></image>
+   <view class="name" >入党纪念</view>
+   <image src="../../icons/right-back.png" class="r-back"> </image>
+</view>
+
+
+  <view class="announce" bindtap="bindViewTapAssessment">
+  <image  class='icon' src="../../icons/resource21.png"></image>
+   <view class="name" >党员考评</view>
+   <image src="../../icons/right-back.png" class="r-back"> </image>
+</view>
+
+
+  <view class="announce" bindtap="bindViewTapAlbum">
+  <image  class='icon' src="../../icons/resource23.png"></image>
+   <view class="name" >活动相册</view>
+   <image src="../../icons/right-back.png" class="r-back"> </image>
+</view>
+
+
+  <view class="announce" bindtap="bindViewTapVote">
+  <image  class='icon' src="../../icons/resource24.png"></image>
+   <view class="name" >投票调研</view>
+   <image src="../../icons/right-back.png" class="r-back"> </image>
+</view>
+ 
+</view>

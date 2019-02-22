@@ -1,0 +1,33 @@
+.title {
+  height: 100rpx;
+  width: 100%;
+  line-height: 100rpx;
+  text-align: center;
+  font-size: 40rpx;
+}
+
+.content {
+  position: relative;
+}
+.content image {
+  width: 100%;
+  height: 1400rpx;
+  background-color: pink;
+}
+.content .message {
+  position: absolute;
+  top: 10%;
+  left: 22%;
+  height: 500rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+}
+.message .date, .message .days {
+  font-size: 100rpx;
+  margin-top: -99rpx;
+}
+.message .tian {
+  font-size: 35rpx;
+}

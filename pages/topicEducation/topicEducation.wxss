@@ -1,0 +1,108 @@
+/* pages/topicEducation/topicEducation.wxss */
+
+.tab {
+  display: flex;
+  width: 100%;
+  height: 90rpx;
+  text-align: center;
+  /* background-color: pink; */
+}
+
+.littleTab {
+  flex-grow: 1;
+  text-align: center;
+  border-top: 1px solid #e7e7e7;
+  border-left: 1px solid #e7e7e7;
+  border-bottom: 1px solid #e7e7e7;
+}
+
+.littleTab1 {
+  flex-grow: 1;
+  text-align: center;
+  border-top: 1px solid #e7e7e7;
+  border-left: 1px solid #e7e7e7;
+  border-bottom: 1px solid #e7e7e7;
+  background-color: #ff8384;
+}
+
+.name {
+  margin-left: 10px;
+  font-size: 1.2rem;
+}
+
+.line {
+  width: 100%;
+  height: 15px;
+  background-color: #e5e5e5;
+}
+
+.announce {
+  display: flex;
+  align-items: center;
+  position: relative;
+  width: 100%;
+  height: 150rpx;
+  margin: 30rpx 0 30rpx;
+  border-top: 1px solid #e7e7e7;
+  border-bottom: 1px solid #e7e7e7;
+  background: white;
+}
+
+/* 专题教育新闻相关样式 */
+
+.topicBg {
+  width: 100%;
+  height: 300rpx;
+  background-color: #fff;
+  border-bottom: 1px solid #e5e5e5;
+  margin-bottom: 10px;
+}
+
+.titleName {
+  float: left;
+  text-align: center;
+  width: 50%;
+  height: 80%;
+  background-color: #fff;
+}
+
+.title {
+  margin-top: 40rpx;
+  font-size: 1.2rem;
+}
+
+.pic {
+  right: 2px;
+  float: left;
+  width: 48%;
+  height: 80%;
+  background-color: #e7e7e7;
+}
+
+.topicFoot {
+  float: left;
+  width: 100%;
+  height: 20%;
+  background-color:#fff;
+  }
+
+.topicTime {
+  float: left;
+  left: 5px;
+  width: 45%;
+  height: 100%;
+  text-align: right;
+}
+
+.topicCount {
+  float: left;
+  right: 5px;
+  width: 45%;
+  height: 100%;
+  text-align: right;
+}
+
+.time {
+  font-size: 0.7rem;
+  color: #dcc;
+}

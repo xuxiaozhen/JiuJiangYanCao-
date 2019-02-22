@@ -1,0 +1,81 @@
+<!--pages/taskManagement/taskManagement.wxml-->
+<view class='rt'>
+<image class='rtImg' bindtap='user' src="../../icons/left-back.png"></image> 
+<view class='reture' bindtap='user'><text >返回</text> </view>
+<view class='my' bindtap='user'><text>任务管理</text> </view>
+</view>
+
+
+<view class='situation'>
+<view class='meet'>年度会议情况</view>
+<view class='meetcount'>年度会议参与次数
+</view>
+<view class='unmeet'>本年度已召开18次会议</view>
+<view class='unmeet'>您有会议缺席</view>
+<view class='meetcontent'>
+<view class="announce" bindtap="bindViewTap">
+   <view class="name" >详细内容</view>
+   <view class='more'>查看更多</view>
+   <image src="../../icons/right-back.png" class="r-back"> </image>
+</view>
+</view>
+</view>
+
+
+<!-- 
+<view class='situation'>
+<view class='meet'>年度会议情况</view>
+<view class='meetcount'>年度会议参与次数
+</view>
+<view class='unmeet'>本年度已召开18次会议</view>
+<view class='unmeet'>您有会议缺席</view>
+<view class="announce" bindtap="bindViewTap">
+   <view class="name" >详细内容</view>
+   <view class='more'>查看更多</view>
+   <image src="../../icons/right-back.png" class="r-back"> </image>
+</view>
+</view>
+
+
+<view class='situation'>
+<view class='meet'>年度微党课课程情况</view>
+<view class='meetcount'>您共阅读文章：128篇
+</view>
+<view class='unmeet'>本年度已召开18次会议</view>
+<view class='unmeet'>您有会议缺席</view>
+<view class="announce" bindtap="bindViewTap">
+   <view class="name" >详细内容</view>
+   <view class='more'>查看更多</view>
+   <image src="../../icons/right-back.png" class="r-back"> </image>
+</view>
+</view>
+
+
+
+<view class='situation'>
+<view class='meet'>年度微党课课程情况</view>
+<view class='meetcount'>您共阅读文章：128篇
+</view>
+<view class='unmeet'>本年度已召开18次会议</view>
+<view class='unmeet'>您有会议缺席</view>
+<view class="announce" bindtap="bindViewTap">
+   <view class="name" >详细内容</view>
+   <view class='more'>查看更多</view>
+   <image src="../../icons/right-back.png" class="r-back"> </image>
+</view>
+</view>
+
+
+
+<view class='situation'>
+<view class='meet'>年度会议情况</view>
+<view class='meetcount'>年度会议参与次数
+</view>
+<view class='unmeet'>本年度已召开18次会议</view>
+<view class='unmeet'>您有会议缺席</view>
+<view class="announce" bindtap="bindViewTap">
+   <view class="name" >详细内容</view>
+   <view class='more'>查看更多</view>
+   <image src="../../icons/right-back.png" class="r-back"> </image>
+</view>
+</view> -->

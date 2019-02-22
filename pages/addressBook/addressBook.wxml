@@ -1,0 +1,29 @@
+<view class="container">
+  <view class="title">成员列表</view>
+
+  <!-- 一组通讯人的盒子 -->
+  <view class="addressBook-box">
+    <view class="contact" wx:for="{{ contact }}">
+      <image class="avatar"></image>
+      <text>{{ item }}</text>
+      <image class="enter"></image>
+    </view>
+  </view>
+  <view class="addressBook-box">
+    <view class="contact">
+      <image class="avatar"></image>
+      <text>姓名</text>
+      <image class="enter"></image>
+    </view>
+    <view class="contact">
+      <image class="avatar"></image>
+      <text>姓名</text>
+      <image class="enter"></image>
+    </view>
+    <view class="contact">
+      <image class="avatar"></image>
+      <text>姓名</text>
+      <image class="enter"></image>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,46 @@
+
+<view class="view-postion">
+<view class="news-title">
+  {{content.title}}
+ <view>
+ <text class="news-ctime">{{content.releaseDate}}</text>
+ <text class="news-local">本站原创</text>
+ <text class="news-count">{{content.views}}次浏览</text>
+ </view>
+</view>
+<view class="news-zw">
+       <view class="all-pl">全部评论（{{length}}）条</view>
+      <block wx:for="{{comments}}" wx:key="key">
+        <view class="pl-warp">
+        <view style="overflow:hidden">
+         <view class="admin">
+           <image src="../../icons/admin.png"></image>
+         </view>
+         <view class="commentUser">
+         <view wx:if="{{item.commentUser==''}}">匿名用户</view>
+           <view wx:else>{{item.commentUser}}</view>
+          <text class="res-time">{{item.createTime}}</text>
+         </view>
+         <view class="zan" hidden="true">
+          <view class="zan-flex">
+           <text>{{item.ups}}</text>
+          <image src="../../icons/ups.png"></image>
+          </view>
+         </view>
+         </view>
+
+          <view class="pl-text">{{item.text}}</view>
+        </view>
+      </block>
+</view>
+</view>
+
+<view class="pl-bar">
+    <input placeholder="我来说两句..." class="isay" bindinput="getText"/>
+     <button bindtap="save" class="save">发送</button>
+</view>
+
+
+
+
+

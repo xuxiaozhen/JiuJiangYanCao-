@@ -1,0 +1,80 @@
+.title {
+  height: 100rpx;
+  width: 100%;
+  line-height: 100rpx;
+  text-align: center;
+  font-size: 40rpx;
+}
+.search-box {
+  height: 90rpx;
+  box-sizing: border-box;
+  background-color: #EFEFF4;
+  padding: 20rpx 30rpx;
+}
+.search-box input {
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  border-radius: 10rpx;
+  font-size: 28rpx;
+  padding: 0 20rpx;
+  box-sizing: border-box;
+}
+.addPhoto {
+  width: 100%;
+  height: 120rpx;
+  padding: 0 20rpx;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+  font-size: 16px;
+  border-bottom: 10px solid #E5E5E5;
+}
+.addPhoto image {
+  width: 30rpx;
+  height: 30rpx;
+}
+
+/* 相册模块 */
+.album-box {
+  width: 100%;
+  height: 185rpx;
+  box-sizing: border-box;
+  padding: 0 20rpx;
+  display: flex;
+  border-bottom: 1rpx solid #E5E5E5;
+  align-items: center;
+  justify-content: space-between;
+}
+.album-box .avatar {
+  width: 140rpx;
+  height: 140rpx;
+  border: 1rpx solid #ccc;
+  border-radius: 10rpx;
+}
+.album-box .enter {
+  width: 30rpx;
+  height: 30rpx;
+  
+}
+.album-box .content {
+  display: flex;
+  flex-flow: column;
+  margin-left: -120rpx;
+}
+.album-box .content text:last-child {
+  font-size: 16px;
+  color: #ccc;
+  margin-top: 15rpx;
+}
+
+
+
+
+
+
+/* 搜索框提示文字的类样式 */
+.placeholder-style {
+  text-align: center;
+}

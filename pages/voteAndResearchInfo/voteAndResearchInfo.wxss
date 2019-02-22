@@ -1,0 +1,40 @@
+/* 头部标题 */
+.title {
+  height: 100rpx;
+  width: 100%;
+  line-height: 100rpx;
+  text-align: start;
+  font-size: 40rpx;
+  border-bottom: 1rpx solid #ccc;
+  box-sizing: border-box;
+  padding: 0 30rpx;
+}
+
+/* 表单域样式 */
+.container textarea {
+  width: 100%;
+  height: 700rpx;
+  box-sizing: border-box;
+  padding: 20rpx;
+}
+
+/* 单选框样式 */
+.radio-box {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  border-top: 1rpx solid #ccc;
+  border-bottom: 1rpx solid #ccc;
+  height: 150px;
+  justify-content: space-around;
+  padding-left: 50rpx;
+}
+.radio-box .radio-content {
+  margin-left: 40rpx;
+}
+
+/* 提交按钮 */
+.sub-btn {
+  width: 95%;
+  margin-top: 40rpx;
+}

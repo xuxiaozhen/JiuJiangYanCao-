@@ -1,0 +1,45 @@
+.title {
+  height: 100rpx;
+  width: 100%;
+  line-height: 100rpx;
+  text-align: center;
+  border-bottom: 1px solid #E5E5E5;
+  font-size: 40rpx;
+}
+.personal {
+  height: 80rpx;
+  padding: 0 35rpx;
+  width: 100%;
+  border-bottom: 1px solid #E5E5E5;
+  line-height: 80rpx;
+  font-size: 35rpx;
+}
+.personal-information image {
+  background-color: pink;
+  width: 40%;
+  margin: 80rpx 30%;
+}
+.personal-information .message {
+  width: 100%;
+  padding: 0 35rpx;
+  box-sizing: border-box;
+  font-size: 30rpx;
+}
+.personal-information .message .row {
+  display: flex;
+  justify-content: space-between;
+  margin: 10rpx 0;
+}
+.member {
+  height: 80rpx;
+  padding: 0 35rpx;
+  width: 100%;
+  border-bottom: 1px solid #E5E5E5;
+  border-top: 1px solid #E5E5E5;
+  line-height: 80rpx;
+  font-size: 30rpx;
+  margin-top: 20rpx;
+  text-align: right;
+  box-sizing: border-box;
+  color: #6A7FA5;
+}

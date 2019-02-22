@@ -1,0 +1,42 @@
+<!--pages/myHeart/myHeart.wxml-->
+<view class='rt'>
+<!-- <image class='rtImg' bindtap='user' src="../../icons/left-back.png"></image>  -->
+<view class='reture' bindtap='user'><text >返回</text> </view>
+<view class='my' bindtap='user'><text>我的心声</text> </view>
+<view class='submit'><button>提交</button></view>
+</view>
+
+<view class='bg'>
+<view class='title'><input placeholder='请输入标题'></input></view>
+<view class='content'><input placeholder='请输入内容'></input></view>
+</view>
+
+
+
+
+<view class='history'  bindtap='personal'>
+<view class='historyTitle'>2019-1-31号记录</view>
+<image src="../../icons/right-back.png" class="r-back"> </image>
+</view>
+
+<view class='history' bindtap='personal'>
+<view class='historyTitle'>2019-1-31号记录</view>
+<image src="../../icons/right-back.png" class="r-back"> </image>
+</view>
+
+<view class='history' bindtap='personal'>
+<view class='historyTitle'>2019-1-31号记录</view>
+<image src="../../icons/right-back.png" class="r-back"> </image>
+</view>
+
+<view class='history' bindtap='personal'>
+<view class='historyTitle'>2019-1-31号记录</view>
+<image src="../../icons/right-back.png" class="r-back"> </image>
+</view>
+
+<view class='history' bindtap='personal'>
+<view class='historyTitle'>2019-1-31号记录</view>
+<image src="../../icons/right-back.png" class="r-back"> </image>
+</view>
+
+

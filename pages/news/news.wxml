@@ -1,0 +1,213 @@
+<!--pages/notice/notice.wxml-->
+
+<view>
+  <scroll-view scroll-x="true" class="tab-h" scroll-left="{{scrollLeft}}">
+    <view class="tab-item {{currentTab==0?'active':''}}" data-current="0" bindtap="swichNav">党建要闻</view>
+    <view class="tab-item {{currentTab==1?'active':''}}" data-current="1" bindtap="swichNav">通知公告</view>
+    <view class="tab-item {{currentTab==2?'active':''}}" data-current="2" bindtap="swichNav">党内公示</view>
+    <view class="tab-item {{currentTab==3?'active':''}}" data-current="3" bindtap="swichNav">党史人物</view>
+    <!-- <view class="tab-item {{currentTab==4?'active':''}}" data-current="4" bindtap="swichNav">纠纷</view>
+    <view class="tab-item {{currentTab==5?'active':''}}" data-current="5" bindtap="swichNav">青葱</view>
+    <view class="tab-item {{currentTab==6?'active':''}}" data-current="6" bindtap="swichNav">全部</view>
+    <view class="tab-item {{currentTab==7?'active':''}}" data-current="7" bindtap="swichNav">其他</view> -->
+  </scroll-view>
+
+
+  <swiper class="tab-content" current="{{currentTab}}" duration="300" bindchange="switchTab" style="height:{{winHeight}}rpx">
+
+    <!-- 党建要闻 -->
+    <swiper-item>
+      <scroll-view scroll-y="true" class="scoll-h">
+        <block wx:key="*this">
+
+          <view class="announce" bindtap="userLogin">
+            <view class='xian'></view>
+            <view class="name">党建要闻</view>
+          </view>
+
+          <view class='Div'>
+            <view class='title'>努力做好新时代干部人事档案工作</view>
+            <image class='img'></image>
+            <view class='tl'>
+              <view class='noticeTime'>
+                <view class='come'>来源：人民网-人民日报</view>
+                <view class='time'>2019年2月19日17：41</view>
+              </view>
+            </view>
+          </view>
+
+          <view class='Div'>
+            <view class='title'>中共中央办公厅印发《干部人事档案工作条例》</view>
+            <view class='bg'>
+              <image class='img1'></image>
+              <view class='li'></view>
+              <image class='img1'></image>
+            </view>
+            <view class='tl'>
+              <view class='noticeTime'>
+                <view class='come'>来源：人民网-人民日报</view>
+                <view class='time'>2019年2月21日02：21</view>
+              </view>
+            </view>
+          </view>
+
+          <view class='article'>陈希：做忠诚干净当担的领导干部</view>
+        </block>
+      </scroll-view>
+    </swiper-item>
+
+    <!-- 通知公告 -->
+    <swiper-item>
+      <scroll-view scroll-y="true" class="scoll-h">
+        <block wx:key="*this">
+          <view class="announce" bindtap="bindViewAnnounce">
+           <view class='xian'></view>
+            <view class="name">通知公告</view>
+          </view>
+
+          <view class='Div1' class='bindViewTabContent'>
+            <view class='title'>中华人共和国财政部部公告2018年第219号</view>
+            <view class='noticeTime'>
+              <view class='come'>刚刚</view>
+              <view class='time'>未读</view>
+            </view>
+          </view>
+
+
+          <view class='Div1'>
+            <view class='title'>中华人共和国财政部部公告2018年第219号</view>
+            <view class='noticeTime'>
+              <view class='come'>刚刚</view>
+              <view class='time'>未读</view>
+            </view>
+          </view>
+        </block>
+      </scroll-view>
+    </swiper-item>
+
+    <!-- 党内公示 -->
+    <swiper-item>
+      <scroll-view scroll-y="true" class="scoll-h">
+        <block wx:key="*this">
+          <view class="announce" bindtap="userLogin">
+              <view class='xian'></view>
+            <view class="name">党内公示</view>
+          </view>
+
+          <view class='Div1'>
+            <view class='title'>中华人共和国财政部部公告2018年第219号</view>
+            <view class='noticeTime'>
+              <view class='come'>刚刚</view>
+              <view class='time'>未读</view>
+            </view>
+          </view>
+
+
+          <view class='Div1'>
+            <view class='title'>中华人共和国财政部部公告2018年第219号</view>
+            <view class='noticeTime'>
+              <view class='come'>刚刚</view>
+              <view class='time'>未读</view>
+            </view>
+          </view>
+        </block>
+      </scroll-view>
+    </swiper-item>
+    <!-- 党史人物-->
+    <swiper-item>
+      <scroll-view scroll-y="true" class="scoll-h">
+        <block wx:key="*this">
+
+          <view class="announce" bindtap="">
+             <view class='xian'></view>
+            <view class="name">党史人物</view>
+          </view>
+          <view class="item-ans">
+            <view class="avatar">
+              <image class="img" src="../../icons/chen.jpg"></image>
+            </view>
+            <view class="expertInfo">
+              <view class="name">陈毅（1902~1971）</view>
+              <view class="tag">男，名世俊，字仲弘，四川乐至人，中国共产党员。久经考验的无产阶级革命...</view>
+              <view class="answerHistory">来源《党史博览》资料库 </view>
+            </view>
+          </view>
+
+          <view class="item-ans">
+            <view class="avatar">
+              <image class="img" src="../../icons/chen.jpg"></image>
+            </view>
+            <view class="expertInfo">
+              <view class="name">陈毅（1902~1971）</view>
+              <view class="tag">男，名世俊，字仲弘，四川乐至人，中国共产党员。久经考验的无产阶级革命...</view>
+              <view class="answerHistory">来源《党史博览》资料库 </view>
+            </view>
+          </view>
+          <view class="item-ans">
+            <view class="avatar">
+              <image class="img" src="../../icons/chen.jpg"></image>
+            </view>
+            <view class="expertInfo">
+              <view class="name">陈毅（1902~1971）</view>
+              <view class="tag">男，名世俊，字仲弘，四川乐至人，中国共产党员。久经考验的无产阶级革命...</view>
+              <view class="answerHistory">来源《党史博览》资料库 </view>
+            </view>
+          </view>
+          <view class="item-ans">
+            <view class="avatar">
+              <image class="img" src="../../icons/chen.jpg"></image>
+            </view>
+            <view class="expertInfo">
+              <view class="name">陈毅（1902~1971）</view>
+              <view class="tag">男，名世俊，字仲弘，四川乐至人，中国共产党员。久经考验的无产阶级革命...</view>
+              <view class="answerHistory">来源《党史博览》资料库 </view>
+            </view>
+          </view>
+        </block>
+      </scroll-view>
+    </swiper-item>
+  </swiper>
+
+  <!-- <swiper-item wx:for="{{[1,3,5,7]}}">
+
+      <scroll-view scroll-y="true" class="scoll-h">
+        <block wx:for="{{[1,3,5,7]}}" wx:key="*this">
+          <view class="item-ans">
+            <view class="avatar">
+              <image class="img" src="../../icons/chen.jpg"></image>
+            </view>
+            <view class="expertInfo">
+              <view class="name">陈毅（1902~1971）</view>
+              <view class="tag">男，名世俊，字仲弘，四川乐至人，中国共产党员。久经考验的无产阶级革命...</view>
+              <view class="answerHistory">来源《党史博览》资料库 </view>
+            </view>
+            <!-- <navigator url="/pages/askExpert/expertDetail" class="askBtn">问TA</navigator> -->
+  <!-- </view>
+        </block>
+      </scroll-view>
+    </swiper-item> -->
+
+  <!-- 党建要问 -->
+  <!-- <swiper-item wx:for="{{[0,2,4,6,8]}}">
+      <scroll-view scroll-y="true" class="scoll-h">
+        <block wx:for="{{[0,2,4,6,8]}}" wx:key="*this">
+          <view class="announce" bindtap="userLogin">
+            <view style="width:10rpx;height:40rpx;background-color:red;margin-left:15px"></view>
+            <view class="name">党建要闻</view>
+          </view>
+
+          <view class='Div'>
+            <view class='title'>努力做好新时代干部人事档案工作</view>
+            <image class='img'></image>
+            <view class='tl'>
+              <view class='noticeTime'>
+                <view class='come'>来源：人民网-人民日报</view>
+                <view class='time'>2019年2月19日17：41</view>
+              </view>
+            </view>
+          </view>
+        </block>
+      </scroll-view>
+    </swiper-item> -->
+
+</view>

@@ -1,0 +1,10 @@
+<!--pages/partyMoney/partyMoney.wxml-->
+<view class='rt'>
+<image class='rtImg' bindtap='user' src="../../icons/left-back.png"></image> 
+<view class='reture' bindtap='user'><text class='word'>返回</text></view>
+</view>
+<view class='text1'>请扫描或识别二维码缴纳党费</view>
+<view class='codebg'>
+<view class='code'></view>
+</view>
+

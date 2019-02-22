@@ -1,0 +1,9 @@
+<!--pages/personal/personal.wxml-->
+<view class='rt'>
+<!-- <image class='rtImg' bindtap='myheart' src="../../icons/left-back.png"></image>  -->
+<view class='reture' bindtap='myheart'><text >返回</text> </view>
+<view class='my' bindtap='user'><text>2019-1-12号记录</text> </view>
+</view>
+<view style='color:#ccc'>
+我尝试过 github 上的若干富文本编辑器，虽然能够实现一部分需求，但是还是不能充分满足我的需求。而百度推出的 UEditor 编辑器口碑不错，文档充分，还是很不错的选择（百度能有良心产品，不容易啊！）。但是 UEditor 没有 npm 安装，需要我们自己手工引入进来。这个到底怎么解决呢，我查找了一些资料，把这些给理顺了。今天出这个文章给遇到这个问题的朋友参考。
+</view>

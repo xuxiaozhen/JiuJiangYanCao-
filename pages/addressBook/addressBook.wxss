@@ -1,0 +1,55 @@
+/* 头部标题 */
+.title {
+  height: 100rpx;
+  width: 100%;
+  line-height: 100rpx;
+  text-align: center;
+  font-size: 40rpx;
+}
+
+/* 一组通讯人盒子样式 */
+.addressBook-box {
+  width: 100%;
+  border-top: 40rpx solid #e5e5e5;
+  padding-left: 20rpx;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  position: relative;
+}
+.addressBook-box::before {
+  content: "A";
+  position: absolute;
+  top: -11%;
+  left: 4%;
+  width: 30rpx;
+  height: 30rpx;
+  display: block;
+  color: #A9A9A9;
+  font-size: 16px;
+}
+.addressBook-box .contact {
+  width: 100%;
+  border-bottom: 1rpx solid #ccc;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20rpx 30rpx 20rpx 0;
+  box-sizing: border-box;
+}
+.addressBook-box .contact:last-child {
+  border-bottom: none;
+}
+.addressBook-box .contact image {
+  width: 80rpx;
+  height: 80rpx;
+  background-color: #dfdfdf;
+}
+.addressBook-box .contact text {
+  margin-left: -60%;
+  font-size: 18px;
+}
+.addressBook-box .contact .enter {
+  width: 40rpx;
+  height: 40rpx;
+}

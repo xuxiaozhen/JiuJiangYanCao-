@@ -1,0 +1,24 @@
+<!--pages/login/login.wxml-->
+<view class="login-warp">
+<form bindsubmit="formSubmit">
+<view class="warp-pos">
+ <input  placeholder="请输入用户名" type="text" class="userPwd" name="username"/>
+
+</view>
+<view class="warp-pos">
+<input placeholder="请输入真实姓名" class="userPwd" name="realname"/>
+</view>
+<view class="warp-pos">
+<input placeholder="请输入密码" class="userPwd" name="pwd1" password/>
+<image src="../../icons/nosee.png" class="img-pos"></image>
+</view>
+
+<view class="warp-pos">
+<input placeholder="请确认密码" class="userPwd" name="pwd2" password/>
+<image src="../../icons/nosee.png" class="img-pos"></image>
+</view>
+<button class="login-btn" formType="submit" bindtap="add">注册</button>
+</form>
+ <view class="fw">注册即表示同意<text>《JEECMS用户注册协议》</text>条款</view>
+</view>
+

@@ -1,0 +1,48 @@
+<!--pages/userInfo/userInfo.wxml-->
+   <view class="user-info">
+   <view class="user-name">头像</view>
+   <image src="{{userInfo.body.userImg}}" class="user-logo"></image>
+   <image src="../../icons/right-back.png" class="r-back"></image>
+  </view>
+  <view class="userInfo-warp">
+    <text class="black">用户昵称</text>
+    <text class="gray">{{userInfo.body.username}}</text>
+  </view> 
+    <view class="userInfo-warp">
+    <text class="black">真实姓名</text>
+    <text class="gray mr40">{{userInfo.body.realname}}</text>
+  </view> 
+    <view class="userInfo-warp mb20">
+    <text class="black">会员组别</text>
+    <text class="blue">{{userInfo.body.group}}</text>
+  </view>
+ 
+   <navigator url="changeInfo?data={{userInfo.body.birthday}}&barName=生日&pramName=birthdayStr&realname={{userInfo.body.realname}}">
+  <view class="userInfo-warp">
+    <text class="black">出生日期</text>
+    <text class="gray mr40" wx:if="{{userInfo.body.birthday}}==''">{{userInfo.body.birthday}}</text>
+     <image src="../../icons/right-back.png" class="r-back"></image>
+  </view> 
+ </navigator>
+
+
+  
+  <navigator url="changeInfo?data={{userInfo.body.mobile}}&barName=手机号&pramName=mobile&realname={{userInfo.body.realname}}">
+  <view class="userInfo-warp" >
+    <text class="black">手机</text>
+    <text class="gray mr40">{{userInfo.body.mobile}}</text>
+     <image src="../../icons/right-back.png" class="r-back"></image>
+  </view> 
+  </navigator>
+
+  <navigator url="changeInfo?data={{userInfo.body.qq}}&barName=QQ&pramName=qq&realname={{userInfo.body.realname}}">
+  <view class="userInfo-warp">
+    <text class="black">QQ</text>
+    <text class="gray mr40">{{userInfo.body.qq}}</text>
+     <image src="../../icons/right-back.png" class="r-back"></image>
+  </view> 
+  </navigator>
+
+
+
+

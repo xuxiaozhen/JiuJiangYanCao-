@@ -1,0 +1,22 @@
+<!-- 题目类型 -->
+<view class='TestType'>
+<text class='type'>单选题（共10题合计100分）</text>
+<text class='testNum'>{{index+1}}/10</text>
+<!-- 题目样式 -->
+<scroll-view>
+  <view class="timu">{{index+1}}.{{postList[index].name}}</view>
+</scroll-view>
+<scroll-view style="height: 600rpx; margin-top: 50rpx;">
+  <button id='A' class="anniu" bindtap="btnOpClick" style="background-color: {{bcA}};">A.{{postList[index].content[0]}}</button>
+  <button id='B' class="anniu" bindtap="btnOpClick" style="background-color: {{bcB}};">B.{{postList[index].content[1]}}</button>
+  <button id='C' class="anniu" bindtap="btnOpClick" style="background-color: {{bcC}};">C.{{postList[index].content[2]}}</button>
+  <button id='D' class="anniu" bindtap="btnOpClick" style="background-color: {{bcD}};">D.{{postList[index].content[3]}}</button>
+</scroll-view>
+<view class="huanti">
+<button bindtap="lastQuestion">上一题</button>
+<button bindtap="nextQuestion">下一题</button>
+<button bindtap="xianshi">{{ny}}</button>
+</view>
+<!-- <text class="jifen">积分：每答对一题积10分，目前得分{{defen}}</text> -->
+
+</view>

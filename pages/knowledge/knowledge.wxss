@@ -1,0 +1,117 @@
+.rt {
+  float: left;
+  width: 100%;
+  height: 120rpx;
+  /* background-color: pink; */
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 10px;
+}
+
+.rtImg {
+  float: left;
+  width: 6%;
+  height: 50rpx;
+  margin-top: 40rpx;
+  margin-left: 20rpx;
+  /* background-color: black; */
+}
+
+.reture {
+  float: left;
+  width: 20%;
+  height: 120rpx;
+  line-height: 120rpx;
+  text-align-last: center;
+  /* background-color: red;   */
+}
+
+.my {
+  float: left;
+  width: 50%;
+  height: 120rpx;
+  line-height: 120rpx;
+  text-align-last: center;
+  /* background-color: black;  */
+}
+
+.submit {
+  float: left;
+  width: 20%;
+  height: 100rpx;
+  /* background-color: red; */
+}
+
+.search {
+  float: left;
+  width: 100%;
+  height: 100rpx;
+  line-height: 100rpx;
+  text-align-last: center;
+  background-color: #ccc;
+  margin-bottom: 10px;
+}
+
+.search input {
+  width: 90%;
+  height: 100rpx;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  border-radius: 10rpx;
+  font-size: 28rpx;
+  padding: 0 20rpx;
+  box-sizing: border-box;
+}
+
+.selection {
+  float: left;
+  display: flex;
+  width: 100%;
+  height: 80rpx;
+}
+
+.option {
+  flex-grow: 1;
+  border-left: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  border-top: 1px solid #ccc;
+}
+.news{
+  float: left;
+  width:100%;
+  height: 150rpx;
+    border-bottom: 1px solid #ccc;
+  /* background-color: pink; */
+
+}
+.news .picture{
+  margin-top: 5rpx;
+  margin-left: 20rpx;
+  float: left;
+  width: 300rpx;
+  height: 140rpx;
+  background-color: #ccc;
+  border-radius:5px; 
+
+}
+.news .title{
+    margin-top: 5rpx;
+    margin-left: 10rpx;
+  float: left;
+  width: 56%;
+  height: 100%;
+  /* background-color: red; */
+}
+.news .title .author{
+  float: left;
+  width: 100%;
+  height: 50%;
+  /* background-color: yellow; */
+}
+.news .title .time{
+  float: left;
+  width: 100%;
+ 
+  /* height: 50%;
+  background-color: yellowgreen; */
+}

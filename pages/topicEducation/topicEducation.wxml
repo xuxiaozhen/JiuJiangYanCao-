@@ -1,0 +1,59 @@
+<!--pages/topicEducation/topicEducation.wxml-->
+<view class='tab'>
+<view class='littleTab' >
+<text class='name' bindtap='bindTabViewSchool'>微党课</text>
+</view>
+<view class='littleTab' bindtap='bindTabViewThree'>
+<text>三会一课</text>
+</view>
+<view class='littleTab1'>
+<text>专题教育</text>
+</view>
+<view class='littleTab'>
+<text>防腐倡廉</text>
+</view>
+
+</view>
+<view class='line'></view>
+
+
+<view class="announce" bindtap="userLogin">
+  <view style="width:10rpx;height:40rpx;background-color:red;margin-left:15px"></view>
+   <view class="name" >专题教育</view>
+</view>
+
+<view class='topicBg'>
+<view class='titleName'><view class='title'>一堂什么样的党课，让那么多党员泪流满面？</view></view>
+<view class='pic'></view>
+<view class='topicFoot'>
+<view class='topicTime'><text class='time'>发表时间2018-12-09</text></view>
+<view class='topicCount'><text class='time'>查看次数：28次</text></view>
+</view>
+</view>
+
+<view class='topicBg'>
+<view class='titleName'><view class='title'>一堂什么样的党课，让那么多党员泪流满面？</view></view>
+<view class='pic'></view>
+<view class='topicFoot'>
+<view class='topicTime'><text class='time'>发表时间2018-12-09</text></view>
+<view class='topicCount'><text class='time'>查看次数：28次</text></view>
+</view>
+</view>
+
+<view class='topicBg'>
+<view class='titleName'><view class='title'>一堂什么样的党课，让那么多党员泪流满面？</view></view>
+<view class='pic'></view>
+<view class='topicFoot'>
+<view class='topicTime'><text class='time'>发表时间2018-12-09</text></view>
+<view class='topicCount'><text class='time'>查看次数：28次</text></view>
+</view>
+</view>
+
+<view class='topicBg'>
+<view class='titleName'><view class='title'>一堂什么样的党课，让那么多党员泪流满面？</view></view>
+<view class='pic'></view>
+<view class='topicFoot'>
+<view class='topicTime'><text class='time'>发表时间2018-12-09</text></view>
+<view class='topicCount'><text class='time'>查看次数：28次</text></view>
+</view>
+</view>

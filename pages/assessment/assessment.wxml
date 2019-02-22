@@ -1,0 +1,31 @@
+<!--  党员考核页面  -->
+<view class="container">
+  <view class="title">党员考评</view>
+  <scroll-view scroll-x="true" class="tab-h" scroll-left="{{scrollLeft}}">
+        <view class="tab-item {{currentTab==0?'active':''}}" data-current="0" bindtap="swichNav">月度</view>
+        <view class="tab-item {{currentTab==1?'active':''}}" data-current="1" bindtap="swichNav">季度</view>
+        <view class="tab-item {{currentTab==2?'active':''}}" data-current="2" bindtap="swichNav">年度</view>
+    </scroll-view>
+    <swiper class="tab-content" current="{{currentTab}}" duration="300" bindchange="switchTab"
+     style="height:{{winHeight}}rpx">
+     <!-- 每一个滑块中的内容 -->
+        <swiper-item>
+            <scroll-view scroll-y="true" class="scoll-h" >
+                <canvas canvas-id="columnCanvas" class="canvas" bindtouchstart="touchHandler"></canvas>
+            </scroll-view>
+        </swiper-item>
+
+        <swiper-item>
+            <scroll-view scroll-y="true" class="scoll-h" >
+                aaaaaaaaaaaaaaaa
+            </scroll-view>
+        </swiper-item>
+
+        <swiper-item>
+            <scroll-view scroll-y="true" class="scoll-h" >
+                cccccccccccccccc
+            </scroll-view>
+        </swiper-item>
+        
+    </swiper>
+</view>

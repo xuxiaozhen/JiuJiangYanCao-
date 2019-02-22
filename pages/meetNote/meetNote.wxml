@@ -1,0 +1,50 @@
+<!--pages/meetNote/meetNote.wxml-->
+<!--pages/threeLessons/threeLessons.wxml-->
+<view class='tab'>
+<view class='littleTab'>
+<text class='name'>微党课</text>
+</view>
+<view class='littleTab1'>
+<text>三会一课</text>
+</view>
+<view class='littleTab'>
+<text>专题教育</text>
+</view>
+<view class='littleTab'>
+<text>防腐倡廉</text>
+</view>
+
+</view>
+<view class='line'></view>
+
+<view class='bg'>
+<view class='meetNote'><text class='name1' bindtap='bindtabView1'>会议通知</text></view>
+<view class='meetNote1'><text class='name1' >会议消息</text></view>
+</view>
+
+<view class="newmeet" bindtap="">
+   <view class="" >2019年会议总场次：23次</view>
+   <image src="../../icons/right-back.png" class="r-back"> </image>
+</view>
+
+
+
+<view class='content'>
+<text class='meet'>将于2019年3月15日召开会议</text>
+<button class='over'>未开始</button>
+<view class='note'>会议主题XXX</view>
+<text class='time'>将于2019年3月15日14：00召开XXX会议</text>
+<text  class='time1' >发起人XXX部</text> 
+</view>
+
+<view class='content'>
+<text class='meet'>将于2019年3月15日召开会议</text>
+<button class='over1'>已结束</button>
+<view class='note'>会议主题XXX</view>
+<text class='time'>将于2019年3月15日14：00召开XXX会议</text>
+<text  class='time1'>发起人XXX部</text> 
+</view>
+
+
+
+

@@ -1,0 +1,14 @@
+<view class="container">
+  <view class="title">入党纪念</view>
+
+  <view class="content">
+    <image></image>
+
+    <view class="message">
+      <text>您的入党生日是：</text>
+      <text class="date">1919.8.10</text>
+      <text>您已加入中国共产党：</text>
+      <text class="days">114514<text class="tian">天</text></text>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,22 @@
+page{
+    border-top: 1px solid #e0e0e0;
+}
+.pl-box{
+    padding: 30rpx 0;
+    margin: 0 30rpx;
+    border-bottom: 1px solid #e0e0e0;
+}
+.news-title{
+    font-size: 22rpx;
+    color: #999;
+    padding-bottom: 20rpx;
+}
+.pl-txt{
+    font-size: 32rpx;
+     padding-bottom: 20rpx;
+}
+.flex-box{
+    display: flex;
+    justify-content:space-between;
+    font-size: 22rpx;
+}

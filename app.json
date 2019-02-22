@@ -1,0 +1,87 @@
+{
+  "pages": [
+    "pages/homes/homes",
+    "pages/notice/notice",
+    "pages/newsContent/newsContent",
+    "pages/picturesContent/picturesContent",
+    "pages/videosContent/videosContent",
+    "pages/videos/videos",
+    "pages/partySchool/partySchool",
+    "pages/researchContent/researchContent",
+    "pages/users/users",
+    "pages/userInfo/userInfo",
+    "pages/userInfo/changeInfo",
+    "pages/login/login",
+    "pages/register/register",
+    "pages/changePassword/changePassword",
+    "pages/comments/comments",
+    "pages/myComments/myComments",
+    "pages/message/Message",
+    "pages/myCollect/myCollect",
+    "pages/recruit/recruit",
+    "pages/news/news",
+    "pages/test/test",
+    "pages/threeLessons/threeLessons",
+    "pages/meetNote/meetNote",
+    "pages/partyPublic/partyPublic",
+    "pages/partyMen/partyMen",
+    "pages/topicEducation/topicEducation",
+    "pages/partyMoney/partyMoney",
+    "pages/myIntegral/myIntegral",
+    "pages/taskManagement/taskManagement",
+    "pages/knowledge/knowledge",
+    "pages/eventAlbum/eventAlbum",
+    "pages/addPhoto/addPhoto",
+    "pages/voteAndResearch/voteAndResearch",
+    "pages/voteAndResearchInfo/voteAndResearchInfo",
+    "pages/commemorate/commemorate",
+    "pages/addressBook/addressBook",
+    "pages/assessment/assessment",
+    "pages/myHeart/myHeart",
+    "pages/personal/personal",
+    "pages/OnlineTest/OnlineTest"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "首页",
+    "navigationBarTextStyle": "black",
+    "backgroundColor": "#fff"
+  },
+  "tabBar": {
+    "color": "#9999",
+    "selectedColor": "#ff402e",
+    "list": [
+      {
+        "pagePath": "pages/homes/homes",
+        "text": "首页",
+        "iconPath": "icons/news.png",
+        "selectedIconPath": "icons/news-on.png"
+      },
+      {
+        "pagePath": "pages/notice/notice",
+        "text": "新闻",
+        "iconPath": "icons/picture.png",
+        "selectedIconPath": "icons/picture-on.png"
+      },
+      {
+        "pagePath": "pages/partySchool/partySchool",
+        "text": "党校",
+        "iconPath": "icons/survey.png",
+        "selectedIconPath": "icons/survey-on.png"
+      },
+      {
+        "pagePath": "pages/videos/videos",
+        "text": "组织",
+        "iconPath": "icons/video.png",
+        "selectedIconPath": "icons/video-on.png"
+      },
+      {
+        "pagePath": "pages/users/users",
+        "text": "个人",
+        "iconPath": "icons/user.png",
+        "selectedIconPath": "icons/user-on.png"
+      }
+    ]
+  }
+}

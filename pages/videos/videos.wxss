@@ -1,0 +1,54 @@
+/* pages/users/users.wxss */
+
+.title {
+  height: 80rpx;
+  position: flex;
+  border-bottom: 1px solid #E5E5E5;
+  width: 100%;
+}
+
+.title .content {
+  font-size: 35rpx;
+  color: #A9A9A9;
+  position: relative;
+  align-self: center;
+  display: block;
+  margin: 40rpx 0 0 40rpx;
+}
+.title .content::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 10rpx;
+  left: -20rpx;
+  height: 30rpx;
+  width: 8rpx;
+  background: #E82E2F;
+}
+.icon{
+  width:80rpx;
+  height:80rpx;
+  text-align: center;
+  margin-left:15px
+}
+.announce{
+    display: flex;
+     align-items: center;
+     position: relative;
+    width: 98%;
+     height: 100rpx;
+     margin: 30rpx 0 30rpx;
+     border-bottom: 1px solid #e7e7e7;
+     background: white;
+}
+.name{
+  margin-left: 10px;
+}
+.r-back{
+    position: absolute;
+    top:50%;
+    margin-top:-14rpx;
+    right:30rpx;
+    width: 15rpx;
+    height: 28rpx;
+}

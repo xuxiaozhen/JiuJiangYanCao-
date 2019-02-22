@@ -1,0 +1,54 @@
+<!-- 投票与调研页面 -->
+<view class="container">
+  <view class="title">投票调研</view>
+
+  <!-- 投票调研内容部分 -->
+  <navigator class="content-box" url="../../pages/voteAndResearchInfo/voteAndResearchInfo">
+    <view class="content">
+      <text>关于XXX的投票调研</text>
+      <text class="date">发起日期：2019-12-04</text>
+    </view>
+    <image class="enter" src="../../icons/right-back.png"></image>
+  </navigator>
+
+  <navigator class="content-box" url="../../pages/voteAndResearchInfo/voteAndResearchInfo">
+    <view class="content">
+      <text>关于XXX的投票调研</text>
+      <text class="date">发起日期：2019-12-04</text>
+    </view>
+    <image class="enter" src="../../icons/right-back.png"></image>
+  </navigator>
+
+  <navigator class="content-box">
+    <view class="content">
+      <text>关于XXX的投票调研</text>
+      <text class="date">发起日期：2019-12-04</text>
+    </view>
+    <image class="enter" src="../../icons/right-back.png"></image>
+  </navigator>
+
+  <navigator class="content-box">
+    <view class="content">
+      <text>关于XXX的投票调研</text>
+      <text class="date">发起日期：2019-12-04</text>
+    </view>
+    <image class="enter" src="../../icons/right-back.png"></image>
+  </navigator>
+
+  <navigator class="content-box">
+    <view class="content">
+      <text>关于XXX的投票调研</text>
+      <text class="date">发起日期：2019-12-04</text>
+    </view>
+    <image class="enter" src="../../icons/right-back.png"></image>
+  </navigator>
+
+  <navigator class="content-box">
+    <view class="content">
+      <text>关于XXX的投票调研</text>
+      <text class="date">发起日期：2019-12-04</text>
+    </view>
+    <image class="enter" src="../../icons/right-back.png"></image>
+  </navigator>
+
+</view>

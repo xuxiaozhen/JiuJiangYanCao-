@@ -1,0 +1,40 @@
+<view class="container">
+  <view class="title">
+    <text class="content">个人</text>
+  </view>
+  
+
+  <view class="announce" bindtap="bindViewTapMoney">
+  <image  class='icon' src="../../icons/img11.png"></image>
+   <view class="name" >党费收缴</view>
+   <image src="../../icons/right-back.png" class="r-back"> </image>
+</view>
+  
+    <view class="announce" bindtap="bindViewTapMy">
+  <image  class='icon' src="../../icons/img6.png"></image>
+   <view class="name" >我的积分</view>
+   <image src="../../icons/right-back.png" class="r-back"> </image>
+</view>
+
+
+  <view class="announce" bindtap="bindViewTapTask">
+  <image  class='icon' src="../../icons/img13.png"></image>
+   <view class="name" >任务管理</view>
+   <image src="../../icons/right-back.png" class="r-back"> </image>
+</view>
+
+
+  <view class="announce" bindtap="bindViewTapknowledge">
+  <image  class='icon' src="../../icons/resource27.png"></image>
+   <view class="name" >党建知识库</view>
+   <image src="../../icons/right-back.png" class="r-back"> </image>
+</view>
+
+
+  <view class="announce" bindtap="bindViewTapHeart">
+  <image  class='icon' src="../../icons/resource30.png"></image>
+   <view class="name" >我的心声</view>
+   <image src="../../icons/right-back.png" class="r-back"> </image>
+</view>
+ 
+</view>

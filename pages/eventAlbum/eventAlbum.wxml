@@ -1,0 +1,75 @@
+<!-- 活动相册页面 -->
+<view class="container">
+  <view class="title">活动相册</view>
+  <!-- 搜索盒子 -->
+  <view class="search-box">
+    <input 
+    type="text" 
+    placeholder="搜索"
+    maxlength="30"
+    placeholder-class="placeholder-style"
+    />
+  </view>
+  <!-- 添加照片按钮 -->
+  <navigator class="addPhoto" url="../../pages/addPhoto/addPhoto">
+    <text>添加照片</text>
+    <image src='../../icons/right-back.png'></image>
+  </navigator>
+
+  <!-- 相册模块 -->
+  <view class="album-box">
+    <!-- 头像 -->
+    <image class="avatar"></image>
+    <!-- 中间描述文字 -->
+    <view class="content">
+      <text>2019-2-20活动相册</text>
+      <text>xxx活动相册</text>
+    </view>
+    <!-- 进入图标 -->
+    <image class="enter" src='../../icons/right-back.png'></image>
+  </view>
+  <view class="album-box">
+    <!-- 头像 -->
+    <image class="avatar"></image>
+    <!-- 中间描述文字 -->
+    <view class="content">
+      <text>2019-2-20活动相册</text>
+      <text>xxx活动相册</text>
+    </view>
+    <!-- 进入图标 -->
+    <image class="enter" src='../../icons/right-back.png'></image>
+  </view>
+  <view class="album-box">
+    <!-- 头像 -->
+    <image class="avatar"></image>
+    <!-- 中间描述文字 -->
+    <view class="content">
+      <text>2019-2-20活动相册</text>
+      <text>xxx活动相册</text>
+    </view>
+    <!-- 进入图标 -->
+    <image class="enter" src='../../icons/right-back.png'></image>
+  </view>
+  <view class="album-box">
+    <!-- 头像 -->
+    <image class="avatar"></image>
+    <!-- 中间描述文字 -->
+    <view class="content">
+      <text>2019-2-20活动相册</text>
+      <text>xxx活动相册</text>
+    </view>
+    <!-- 进入图标 -->
+    <image class="enter" src='../../icons/right-back.png'></image>
+  </view>
+  <view class="album-box">
+    <!-- 头像 -->
+    <image class="avatar"></image>
+    <!-- 中间描述文字 -->
+    <view class="content">
+      <text>2019-2-20活动相册</text>
+      <text>xxx活动相册</text>
+    </view>
+    <!-- 进入图标 -->
+    <image class="enter" src='../../icons/right-back.png'></image>
+  </view>
+</view>
