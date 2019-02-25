@@ -1,66 +1,108 @@
 Page({
-
-  /**
-   * 页面的初始数据
+  /** 
+   * 页面的初始数据 
    */
   data: {
-    // 迫真联系人
-    contact: ['张三','李四','王五']
+    isActive: null,
+    listMain: [{
+      id: "1", region: "A",
+      items: [
+        { id: "", name: "啊啊啊啊" },
+        { id: "", name: "amour" },
+        { id: "", name: "amour" },
+        { id: "", name: "amour" }
+      ]
+    },
+    {
+      id: "2", region: "B",
+      items: [
+        { id: "", name: "bandon" },
+        { id: "", name: "bandon" }
+      ]
+    },
+    {
+      id: "3", region: "C",
+      items: [
+        { id: "", name: "client" },
+        { id: "", name: "client" },
+        { id: "", name: "client" },
+        { id: "", name: "client" }
+      ]
+    },
+    {
+      id: "4", region: "D",
+      items: [
+        { id: "", name: "digital" },
+        { id: "", name: "digital" }
+      ]
+    },
+    {
+      id: "5", region: "E",
+      items: [
+        { id: "", name: "echo" },
+        { id: "", name: "echo" },
+        { id: "", name: "echo" },
+        { id: "", name: "echo" }
+      ]
+    },
+    {
+      id: "6", region: "F",
+      items: [
+        { id: "", name: "funk" },
+        { id: "", name: "funk" }
+      ]
+    },
+    ],
+    listTitles: [],
+    fixedTitle: 'A',
+    toView: 'inToView0',
+    viewPosition: [],
+    scroolHeight: 0
   },
-
-  /**
-   * 生命周期函数--监听页面加载
-   */
+  //页面加载触发， 获取所定义view距离可滚动视图区域顶部高度
   onLoad: function (options) {
-    
+    var that = this;
+    var num = 0;
+    for (let i = 0; i < that.data.listMain.length; i++) {
+      wx.createSelectorQuery().select('#inToView' + that.data.listMain[i].id).boundingClientRect(function (rect) {
+        num = num + rect.height; //元素高度+该元素先前元素高度 ， 可理解为元素底部至可滚动视图区域顶部高度
+        console.log(num)
+        var _array = [{ 'height': num, 'key': rect.dataset.id, 'name': that.data.listMain[i].region }];
+        that.setData({
+          viewPosition: that.data.viewPosition.concat(_array) //合并数组
+        });
+      }).exec()
+    };
   },
-
-  /**
-   * 生命周期函数--监听页面初次渲染完成
-   */
-  onReady: function () {
-    
+  // 可滚动视图区域滑动函数触发
+  onPageScroll: function (e) {
+    console.log(e)
+    this.setData({
+      scroolHeight: e.detail.scrollTop //获取滚动条滚动位置
+    });
+    for (let i in this.data.viewPosition) {
+      if (e.detail.scrollTop < this.data.viewPosition[i].height) { //判断滚动条位置是否在元素内
+        this.setData({
+          isActive: this.data.viewPosition[i].key,
+          fixedTitle: this.data.viewPosition[i].name
+        });
+        return false;
+      }
+    }
   },
-
-  /**
-   * 生命周期函数--监听页面显示
-   */
-  onShow: function () {
-    
+  //点击右侧字母导航定位触发
+  scrollToViewFn: function (e) {
+    console.log(e)
+    var that = this;
+    var _id = e.target.dataset.id;
+    for (var i = 0; i < that.data.listMain.length; ++i) {
+      if (that.data.listMain[i].id === _id) {
+        that.setData({
+          isActive: _id,
+          toView: 'inToView' + _id //滚动条to指定view
+        })
+        break
+      }
+    }
   },
-
-  /**
-   * 生命周期函数--监听页面隐藏
-   */
-  onHide: function () {
-    
-  },
-
-  /**
-   * 生命周期函数--监听页面卸载
-   */
-  onUnload: function () {
-    
-  },
-
-  /**
-   * 页面相关事件处理函数--监听用户下拉动作
-   */
-  onPullDownRefresh: function () {
-    
-  },
-
-  /**
-   * 页面上拉触底事件的处理函数
-   */
-  onReachBottom: function () {
-    
-  },
-
-  /**
-   * 用户点击右上角分享
-   */
-  onShareAppMessage: function () {
-    
-  }
 })

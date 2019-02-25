@@ -1,49 +1,30 @@
-/* pages/partyMoney/partyMoney.wxss */
-
-.rt {
-  float: left;
+.title {
+  height: 100rpx;
   width: 100%;
-  height: 120rpx;
-  /* background-color: pink; */
-  border-bottom: 1px solid #ccc;
-  margin-bottom: 10px;
-}
-
-.rtImg {
-  float: left;
-  width: 6%;
-  height: 50rpx;
-  margin-top: 40rpx;
-  margin-left: 20rpx;
-  /* background-color: black; */
-}
-
-.reture {
-  float: left;
-  width: 20%;
-  height: 120rpx;
-  line-height: 120rpx;
-  text-align-last: center;
-  /* background-color: red;  */
-}
-
-.text1 {
-  float: left;
-  width: 100%;
-  height: 50rpx;
+  line-height: 100rpx;
   text-align: center;
+  font-size: 40rpx;
+  border-bottom: 1rpx solid #ccc;
 }
-
-.codebg {
-  float: left;
+text {
+  display: inline-block;
   width: 100%;
-  height: 500rpx;
-  /* background-color: black; */
+  text-align: center;
+  padding-top: 50rpx;
+  font-size: 25px;
 }
 
-.code {
-  margin-left: 35px;
-  width: 80%;
-  height: 500rpx;
-  background-color: #ccc;
+/* 打钱用的二维码样式 */
+.qr-code {
+  width: 600rpx;
+  height: 600rpx;
+  background-color: pink;
+  margin: 40rpx auto;
+}
+
+/* 底部的文字说明 */
+.explanation text {
+  padding: 0;
+  color: #ADADAD;
+  font-size: 16px;
 }

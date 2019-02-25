@@ -19,12 +19,12 @@
 }
 
 .tab-item.active {
-
-  color: #ff8384;
+background-color:#ff8384; 
+  color: #fff;
   position: relative;
 }
 
-.tab-item.active:after {
+/* .tab-item.active:after {
   content: "";
   display: block;
   height: 8rpx;
@@ -34,7 +34,7 @@
   bottom: 0;
   left: 5rpx;
   border-radius: 16rpx;
-}
+} */
 
 .item-ans {
   width: 100%;

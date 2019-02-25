@@ -1,5 +1,11 @@
-/* pages/myIntegral/myIntegral.wxss */
-
+.title {
+  height: 100rpx;
+  width: 100%;
+  line-height: 100rpx;
+  text-align: center;
+  font-size: 40rpx;
+  border-bottom: 20rpx solid #ccc;
+}
 
 .rt {
   float: left;

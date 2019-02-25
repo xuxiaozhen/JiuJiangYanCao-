@@ -122,7 +122,7 @@
              <view class='xian'></view>
             <view class="name">党史人物</view>
           </view>
-          <view class="item-ans">
+           <navigator class="item-ans" url='../MenContent/MenContent'>
             <view class="avatar">
               <image class="img" src="../../icons/chen.jpg"></image>
             </view>
@@ -131,9 +131,9 @@
               <view class="tag">男，名世俊，字仲弘，四川乐至人，中国共产党员。久经考验的无产阶级革命...</view>
               <view class="answerHistory">来源《党史博览》资料库 </view>
             </view>
-          </view>
+          </navigator>
 
-          <view class="item-ans">
+          <navigator class="item-ans" url='../MenContent/MenContent'>
             <view class="avatar">
               <image class="img" src="../../icons/chen.jpg"></image>
             </view>
@@ -142,8 +142,8 @@
               <view class="tag">男，名世俊，字仲弘，四川乐至人，中国共产党员。久经考验的无产阶级革命...</view>
               <view class="answerHistory">来源《党史博览》资料库 </view>
             </view>
-          </view>
-          <view class="item-ans">
+          </navigator>
+            <navigator class="item-ans" url='../MenContent/MenContent'>
             <view class="avatar">
               <image class="img" src="../../icons/chen.jpg"></image>
             </view>
@@ -152,8 +152,8 @@
               <view class="tag">男，名世俊，字仲弘，四川乐至人，中国共产党员。久经考验的无产阶级革命...</view>
               <view class="answerHistory">来源《党史博览》资料库 </view>
             </view>
-          </view>
-          <view class="item-ans">
+          </navigator>
+            <navigator class="item-ans" url='../MenContent/MenContent'>
             <view class="avatar">
               <image class="img" src="../../icons/chen.jpg"></image>
             </view>
@@ -162,7 +162,7 @@
               <view class="tag">男，名世俊，字仲弘，四川乐至人，中国共产党员。久经考验的无产阶级革命...</view>
               <view class="answerHistory">来源《党史博览》资料库 </view>
             </view>
-          </view>
+          </navigator>
         </block>
       </scroll-view>
     </swiper-item>

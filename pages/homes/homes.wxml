@@ -156,7 +156,7 @@
 
 <view class='footIcon'>
 <!-- -->
-<view class="wxicon"  bindtap="bindViewTap">
+<view class="wxicon"  bindtap="bindViewTapMore">
  <image src="../../icons/img15.png" class='img'>
  </image> 
  <view class='word'>更多</view>
@@ -178,7 +178,7 @@
 
 <view class="announce" bindtap="bindViewTapNote">
    <view class="name1" >标题1</view>
-   <image src="../../icons/img4.png" class="pic"> </image>
+   <image class="pic"> </image>
 </view>
 <view class='time'>刚刚</view>
 

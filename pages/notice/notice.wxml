@@ -25,7 +25,7 @@
             <view class="name">党建要闻</view>
           </view>
 
-          <view class='Div'>
+          <navigator class='Div' url='../newHome/newHome' >
             <view class='title'>努力做好新时代干部人事档案工作</view>
             <image class='img'></image>
             <view class='tl'>
@@ -34,9 +34,9 @@
                 <view class='time'>2019年2月19日17：41</view>
               </view>
             </view>
-          </view>
+         </navigator>
 
-          <view class='Div'>
+        <navigator class='Div' >
             <view class='title'>中共中央办公厅印发《干部人事档案工作条例》</view>
             <view class='bg'>
               <image class='img1'></image>
@@ -49,7 +49,7 @@
                 <view class='time'>2019年2月21日02：21</view>
               </view>
             </view>
-          </view>
+          </navigator>
 
           <view class='article'>陈希：做忠诚干净当担的领导干部</view>
         </block>
@@ -65,22 +65,22 @@
             <view class="name">通知公告</view>
           </view>
 
-          <view class='Div1' bindtap='bindViewTabContent'>
+           <navigator class='Div1' url='../newsContent/newsContent'>
             <view class='title'>中华人共和国财政部部公告2018年第219号</view>
             <view class='noticeTime'>
               <view class='come'>刚刚</view>
               <view class='time'>未读</view>
             </view>
-          </view>
+         </navigator>
 
 
-          <view class='Div1'>
+          <navigator class='Div1' url='../newsContent/newsContent'>
             <view class='title'>中华人共和国财政部部公告2018年第219号</view>
             <view class='noticeTime'>
               <view class='come'>刚刚</view>
               <view class='time'>未读</view>
             </view>
-          </view>
+         </navigator>
         </block>
       </scroll-view>
     </swiper-item>
@@ -94,22 +94,22 @@
             <view class="name">党内公示</view>
           </view>
 
-          <view class='Div1'>
+          <navigator class='Div1' url='../publicCotent/publicCotent'>
             <view class='title'>中华人共和国财政部部公告2018年第219号</view>
             <view class='noticeTime'>
               <view class='come'>刚刚</view>
               <view class='time'>未读</view>
             </view>
-          </view>
+        </navigator>
 
 
-          <view class='Div1'>
+          <navigator class='Div1' url='../publicCotent/publicCotent'>
             <view class='title'>中华人共和国财政部部公告2018年第219号</view>
             <view class='noticeTime'>
               <view class='come'>刚刚</view>
               <view class='time'>未读</view>
             </view>
-          </view>
+        </navigator>
         </block>
       </scroll-view>
     </swiper-item>
@@ -122,18 +122,9 @@
              <view class='xian'></view>
             <view class="name">党史人物</view>
           </view>
-          <view class="item-ans">
-            <view class="avatar">
-              <image class="img" src="../../icons/chen.jpg"></image>
-            </view>
-            <view class="expertInfo">
-              <view class="name">陈毅（1902~1971）</view>
-              <view class="tag">男，名世俊，字仲弘，四川乐至人，中国共产党员。久经考验的无产阶级革命...</view>
-              <view class="answerHistory">来源《党史博览》资料库 </view>
-            </view>
-          </view>
 
-          <view class="item-ans">
+
+          <navigator class="item-ans" url='../MenContent/MenContent'>
             <view class="avatar">
               <image class="img" src="../../icons/chen.jpg"></image>
             </view>
@@ -142,8 +133,10 @@
               <view class="tag">男，名世俊，字仲弘，四川乐至人，中国共产党员。久经考验的无产阶级革命...</view>
               <view class="answerHistory">来源《党史博览》资料库 </view>
             </view>
-          </view>
-          <view class="item-ans">
+          </navigator>
+
+         
+          <navigator class="item-ans" url='../MenContent/MenContent'>
             <view class="avatar">
               <image class="img" src="../../icons/chen.jpg"></image>
             </view>
@@ -152,8 +145,11 @@
               <view class="tag">男，名世俊，字仲弘，四川乐至人，中国共产党员。久经考验的无产阶级革命...</view>
               <view class="answerHistory">来源《党史博览》资料库 </view>
             </view>
-          </view>
-          <view class="item-ans">
+          </navigator>
+
+
+         
+          <navigator class="item-ans" url='../MenContent/MenContent'>
             <view class="avatar">
               <image class="img" src="../../icons/chen.jpg"></image>
             </view>
@@ -162,7 +158,20 @@
               <view class="tag">男，名世俊，字仲弘，四川乐至人，中国共产党员。久经考验的无产阶级革命...</view>
               <view class="answerHistory">来源《党史博览》资料库 </view>
             </view>
-          </view>
+          </navigator>
+
+
+         
+          <navigator class="item-ans" url='../MenContent/MenContent'>
+            <view class="avatar">
+              <image class="img" src="../../icons/chen.jpg"></image>
+            </view>
+            <view class="expertInfo">
+              <view class="name">陈毅（1902~1971）</view>
+              <view class="tag">男，名世俊，字仲弘，四川乐至人，中国共产党员。久经考验的无产阶级革命...</view>
+              <view class="answerHistory">来源《党史博览》资料库 </view>
+            </view>
+          </navigator>
         </block>
       </scroll-view>
     </swiper-item>

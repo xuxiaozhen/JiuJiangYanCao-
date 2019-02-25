@@ -1,81 +1,39 @@
-<!--pages/taskManagement/taskManagement.wxml-->
-<view class='rt'>
-<image class='rtImg' bindtap='user' src="../../icons/left-back.png"></image> 
-<view class='reture' bindtap='user'><text >返回</text> </view>
-<view class='my' bindtap='user'><text>任务管理</text> </view>
-</view>
+<view class="container">
+  <view class="title">任务管理</view>
 
-
-<view class='situation'>
-<view class='meet'>年度会议情况</view>
-<view class='meetcount'>年度会议参与次数
+  <!-- 任务管理内容区域 -->
+  <view class="task-content">
+    <view class="h-m">
+      <view class="header">
+        <text>年度会议情况</text>
+      </view>
+      <view class="main">
+        <text>会议参与次数：810次</text>
+        <text decode="true">本年度已召开会议&nbsp;&nbsp;1919次</text>
+        <text>您有会议缺席</text>
+      </view>
+    </view>
+    <view class="footer">
+      <text>详细内容</text>
+      <navigator>查看详情</navigator>
+      <image src="../../icons/right-back.png"></image>
+    </view>
+  </view>
+  <view class="task-content">
+    <view class="h-m">
+      <view class="header">
+        <text>年度微党校课程情况</text>
+      </view>
+      <view class="main">
+        <text>课程学习进度：810次</text>
+        <text decode="true">您共阅读文章&nbsp;&nbsp;1919次</text>
+        <text>总计阅读时间：200分钟</text>
+      </view>
+    </view>
+    <view class="footer">
+      <text>详细内容</text>
+      <navigator>查看详情</navigator>
+      <image src="../../icons/right-back.png"></image>
+    </view>
+  </view>
 </view>
-<view class='unmeet'>本年度已召开18次会议</view>
-<view class='unmeet'>您有会议缺席</view>
-<view class='meetcontent'>
-<view class="announce" bindtap="bindViewTap">
-   <view class="name" >详细内容</view>
-   <view class='more'>查看更多</view>
-   <image src="../../icons/right-back.png" class="r-back"> </image>
-</view>
-</view>
-</view>
-
-
-<!-- 
-<view class='situation'>
-<view class='meet'>年度会议情况</view>
-<view class='meetcount'>年度会议参与次数
-</view>
-<view class='unmeet'>本年度已召开18次会议</view>
-<view class='unmeet'>您有会议缺席</view>
-<view class="announce" bindtap="bindViewTap">
-   <view class="name" >详细内容</view>
-   <view class='more'>查看更多</view>
-   <image src="../../icons/right-back.png" class="r-back"> </image>
-</view>
-</view>
-
-
-<view class='situation'>
-<view class='meet'>年度微党课课程情况</view>
-<view class='meetcount'>您共阅读文章：128篇
-</view>
-<view class='unmeet'>本年度已召开18次会议</view>
-<view class='unmeet'>您有会议缺席</view>
-<view class="announce" bindtap="bindViewTap">
-   <view class="name" >详细内容</view>
-   <view class='more'>查看更多</view>
-   <image src="../../icons/right-back.png" class="r-back"> </image>
-</view>
-</view>
-
-
-
-<view class='situation'>
-<view class='meet'>年度微党课课程情况</view>
-<view class='meetcount'>您共阅读文章：128篇
-</view>
-<view class='unmeet'>本年度已召开18次会议</view>
-<view class='unmeet'>您有会议缺席</view>
-<view class="announce" bindtap="bindViewTap">
-   <view class="name" >详细内容</view>
-   <view class='more'>查看更多</view>
-   <image src="../../icons/right-back.png" class="r-back"> </image>
-</view>
-</view>
-
-
-
-<view class='situation'>
-<view class='meet'>年度会议情况</view>
-<view class='meetcount'>年度会议参与次数
-</view>
-<view class='unmeet'>本年度已召开18次会议</view>
-<view class='unmeet'>您有会议缺席</view>
-<view class="announce" bindtap="bindViewTap">
-   <view class="name" >详细内容</view>
-   <view class='more'>查看更多</view>
-   <image src="../../icons/right-back.png" class="r-back"> </image>
-</view>
-</view> -->

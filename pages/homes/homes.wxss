@@ -128,16 +128,15 @@ button:last-child{
   display: flex;
   flex-wrap:wrap;
   width: 100%;
-  height: 440rpx;
-  background-color: #F8F8F8;
+  height: 540rpx;
+  background-color: #fff;
 }
 .footIcon{
   margin-top:  15rpx ;
   margin-right:10rpx;
   width:18%;
   height: 140rpx;
-  background-color: #F8F8F8;
-  border: 1rpx solid #F8F8F8;
+  background-color: #fff;
 }
 .wxicon{
   text-align: center;
@@ -157,18 +156,18 @@ text-align: center；
 margin-top: 20px;
 width: 100%;
 height: 15px;
-background-color: #999999;
+background-color: #E5E5E5;
 }
 .announce{
     display: flex;
-     align-items: center;
-     position: relative;
+    align-items: center;
+    position: relative;
     width: 100%;
-     height: 150rpx;
-     margin: 30rpx 0 30rpx;
-     border-top: 1px solid #e7e7e7;
-     border-bottom: 1px solid #e7e7e7;
-     background: white;
+    height: 150rpx;
+    margin: 30rpx 0 30rpx;
+    border-top: 1px solid #e7e7e7;
+    border-bottom: 1px solid #e7e7e7;
+    background: white;
 }
 .name{
   margin-left: 10px;
@@ -192,12 +191,14 @@ background-color: #999999;
 .name1{
   /* margin-left:20rpx;  */
     display: flex;
-     align-items: center;
-     position: relative;
-     width: 100%;
-     height: 190rpx;
-     background: white;
-     font-size: 1.5rem;
+    align-items: center;
+    position: relative;
+    box-sizing: border-box;
+    padding: 0 20rpx;
+    width: 100%;
+    height: 190rpx;
+    background: white;
+    font-size: 1.5rem;
 
 }
 .pic{
@@ -206,6 +207,7 @@ background-color: #999999;
     right:30rpx;
     width: 40%;
     height: 100%;
+    background-color: #ccc;
 }
 .time{
   margin-top: 0;

@@ -1,10 +1,4 @@
-<!--pages/myIntegral/myIntegral.wxml-->
-<!--pages/partyMoney/partyMoney.wxml-->
-<view class='rt'>
-<!-- <image class='rtImg' bindtap='user' src="../../icons/left-back.png"></image>  -->
-<view class='reture' bindtap='user'><text >返回</text> </view>
-<view class='my' bindtap='user'><text>我的积分</text> </view>
-</view>
+<view class="title">我的积分</view>
 
 <view class='score' >累计积分:56fen</view>
 <view class='score'>综合排名:第1名</view>

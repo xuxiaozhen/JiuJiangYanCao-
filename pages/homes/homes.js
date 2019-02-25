@@ -89,16 +89,23 @@ Page({
       url:'../partyMoney/partyMoney'
     })
   },
+  //任务管理
   bindViewTaptaskManagement: function () {
     wx.navigateTo({
-      url:'pages/taskManagement/taskManagement'
+      url: '../partyMoney/partyMoney'
     })
   },
   bindViewTapTest: function () {
     wx.reLaunch({
       url: '../OnlineTest/OnlineTest'
     })
-  },
+  }, 
+  bindViewTapMore: function () {
+    wx.navigateTo({
+      url: '../MoreTabs/MoreTabs'
+    })
+  }, 
+
   
 
   // changeProperty: function (e) {

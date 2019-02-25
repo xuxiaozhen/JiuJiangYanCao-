@@ -1,35 +1,89 @@
-<view class='rt'>
-<image class='rtImg' bindtap='user' src="../../icons/left-back.png"></image> 
-<view class='reture' bindtap='user'><text >返回</text> </view>
-<view class='my' bindtap='user'><text>党建知识库</text> </view>
-<view class='submit'><button>更多</button></view>
-</view>
+<!-- 党建知识库页面 -->
+<view class="container">
+  <!-- 头部标题 -->
+  <view class="title">党建知识库</view>
 
-<view class='search'>
-<input 
+<!--按钮样式button-->
+
+
+
+
+
+  <!-- 搜索栏 -->
+  <view class="search-box">
+    <input 
     type="text" 
     placeholder="搜索"
     maxlength="30"
     placeholder-class="placeholder-style"
     />
-</view>
+  </view>
 
+  <!-- 滑块以及滑块下的内容 -->
+    <scroll-view scroll-x="true" class="tab-h" scroll-left="{{scrollLeft}}">
+        <view class="tab-item {{currentTab==0?'active':''}}" data-current="0" bindtap="swichNav">全部</view>
+        <view class="tab-item {{currentTab==1?'active':''}}" data-current="1" bindtap="swichNav">组织工作            </view>
+        <view class="tab-item {{currentTab==2?'active':''}}" data-current="2" bindtap="swichNav">党建教育            </view>
+        <view class="tab-item {{currentTab==3?'active':''}}" data-current="3" bindtap="swichNav">党建视频            </view>
+    </scroll-view>
+    <swiper class="tab-content" current="{{currentTab}}" duration="300" bindchange="switchTab"
+     style="height:{{winHeight}}rpx">
+     <!-- 每一个滑块中的内容 -->
+        <swiper-item>
+            <scroll-view scroll-y="true" class="scoll-h" >
+            <!-- 全部 -->
+                <view class="knows-box">
+                  <image></image>
+                  <view class="content">
+                    <text>文字内容文字内容文字内容文字内容文字内容</text>
+                    <!-- 脚注 -->
+                    <view class="footnote">
+                      <text>作者：XXX</text>
+                      <text>1919-5-14</text>
+                    </view>
+                  </view>
+                </view>
+                <view class="knows-box">
+                  <image></image>
+                  <view class="content">
+                    <text>文字内容文字内容文字内容文字内容文字内容</text>
+                    <!-- 脚注 -->
+                    <view class="footnote">
+                      <text>作者：XXX</text>
+                      <text>1919-5-14</text>
+                    </view>
+                  </view>
+                </view>
+                <view class="knows-box">
+                  <image></image>
+                  <view class="content">
+                    <text>文字内容文字内容文字内容文字内容文字内容</text>
+                    <!-- 脚注 -->
+                    <view class="footnote">
+                      <text>作者：XXX</text>
+                      <text>1919-5-14</text>
+                    </view>
+                  </view>
+                </view>
+            </scroll-view>
+        </swiper-item>
 
-<view class='selection'>
-<text class='option' style='color:red'>全部</text>
-<text class='option'>组织工作</text>
-<text class='option'>党建教育</text>
-<text class='option'>党建视频</text>
-<text class='option'>全部</text>
-</view>
-<!-- 新闻相关 -->
-<view class='news'>
-<!-- 图片 -->
-<view class='picture'></view>
-<view class='title'>
-<view class='author'>伟大思想理论银河伟大</view>
-<view class='time'>
-<text style='font-size:0.7rem;color:#ccc'>z作者XXX</text><text style='font-size:0.7rem;color:#ccc;right:5rpx;'>2019-12-23</text>
-</view>
-</view>
+        <swiper-item>
+            <scroll-view scroll-y="true" class="scoll-h" >
+              <!-- 组织工作 -->
+                组织工作
+            </scroll-view>
+        </swiper-item>
+
+        <swiper-item>
+            <scroll-view scroll-y="true" class="scoll-h" >
+                党建教育
+            </scroll-view>
+        </swiper-item>
+        <swiper-item>
+            <scroll-view scroll-y="true" class="scoll-h" >
+                党建视频
+            </scroll-view>
+        </swiper-item>
+    </swiper>
 </view>

@@ -1,10 +1,13 @@
-<!--pages/partyMoney/partyMoney.wxml-->
-<view class='rt'>
-<image class='rtImg' bindtap='user' src="../../icons/left-back.png"></image> 
-<view class='reture' bindtap='user'><text class='word'>返回</text></view>
-</view>
-<view class='text1'>请扫描或识别二维码缴纳党费</view>
-<view class='codebg'>
-<view class='code'></view>
-</view>
+<!-- 党费收缴的页面 -->
+<view class="container">
+  <view class="title">党费收缴</view>
+  <text>你把你党费给我交了！！</text>
+  <!-- 二维码 -->
+  <view class="qr-code">这里其实有个很大的二维码</view>
 
+  <!-- 底部的文字说明 -->
+  <view class="explanation">
+    <text>您本月应缴党费：114514元</text>
+    <text>党费详情点击查询</text>
+  </view>
+</view>

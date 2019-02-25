@@ -14,25 +14,15 @@
 }
 
 .tab-item {
-  margin: 0 36rpx;
+  text-align: center;
   display: inline-block;
+  width: 25%;
 }
 
 .tab-item.active {
-  color: #ff8384;
+  background-color: #FF8385;
+  color: #fff;
   position: relative;
-}
-
-.tab-item.active:after {
-  content: "";
-  display: block;
-  height: 8rpx;
-  width: 140rpx;
-  background-color: #ff8384;
-  position: absolute;
-  bottom: 0;
-  left: 5rpx;
-  border-radius: 16rpx;
 }
 
 .item-ans {

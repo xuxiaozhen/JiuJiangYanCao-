@@ -27,8 +27,8 @@
     "pages/partyMen/partyMen",
     "pages/topicEducation/topicEducation",
     "pages/partyMoney/partyMoney",
-    "pages/myIntegral/myIntegral",
     "pages/taskManagement/taskManagement",
+    "pages/myIntegral/myIntegral",
     "pages/knowledge/knowledge",
     "pages/eventAlbum/eventAlbum",
     "pages/addPhoto/addPhoto",
@@ -39,7 +39,17 @@
     "pages/assessment/assessment",
     "pages/myHeart/myHeart",
     "pages/personal/personal",
-    "pages/OnlineTest/OnlineTest"
+    "pages/OnlineTest/OnlineTest",
+    "pages/MoreTabs/MoreTabs",
+    "pages/newHome/newHome",
+    "pages/publicCotent/publicCotent",
+    "pages/MenContent/MenContent",
+    "pages/videoContent/videoContent",
+    "pages/topicsContent/topicsContent",
+    "pages/beingContent/beingContent",
+    "pages/policyContent/policyContent",
+    "pages/meetNoteContent/meetNoteContent",
+    "pages/meetdetails/meetdetails"
   ],
   "window": {
     "backgroundTextStyle": "light",
