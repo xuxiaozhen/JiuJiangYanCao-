@@ -63,6 +63,13 @@ wx.navigateTo({
         });
       }
     });
+    wx.request({
+      url: 'http://192.168.11.108/zhyc/smallProgram/articleList?type=2&pageIndex=2&pageSize=10',
+      method: 'GET',
+      success: function(res) {
+        console.log(res)
+      }
+    })
   },
   footerTap: app.footerTap
 })

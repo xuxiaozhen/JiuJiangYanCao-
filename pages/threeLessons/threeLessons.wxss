@@ -20,11 +20,10 @@
 }
 
 .tab-item.active {
- background-color: #ff8384;
- color: #fff;
+  color: #ff8384;
   position: relative;
 }
-/* 
+
 .tab-item.active:after {
   content: "";
   display: block;
@@ -35,7 +34,7 @@
   bottom: 0;
   left: 5rpx;
   border-radius: 16rpx;
-} */
+}
 
 .item-ans {
   width: 100%;
@@ -254,10 +253,8 @@ text-align: center;
 .meetNote1{
   align-content: center;
   flex-grow: 1;
-  color: #fff;
-  background-color: #FF8384;
-   /* border-bottom: 2px solid#FF8384; */
-
+   border-bottom: 2px solid#FF8384;
+  /* background-color: #FF8384; */
 }
 .name1{
   font-size: 1.2rem;

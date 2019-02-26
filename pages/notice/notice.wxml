@@ -6,10 +6,6 @@
     <view class="tab-item {{currentTab==1?'active':''}}" data-current="1" bindtap="swichNav">通知公告</view>
     <view class="tab-item {{currentTab==2?'active':''}}" data-current="2" bindtap="swichNav">党内公示</view>
     <view class="tab-item {{currentTab==3?'active':''}}" data-current="3" bindtap="swichNav">党史人物</view>
-    <!-- <view class="tab-item {{currentTab==4?'active':''}}" data-current="4" bindtap="swichNav">纠纷</view>
-    <view class="tab-item {{currentTab==5?'active':''}}" data-current="5" bindtap="swichNav">青葱</view>
-    <view class="tab-item {{currentTab==6?'active':''}}" data-current="6" bindtap="swichNav">全部</view>
-    <view class="tab-item {{currentTab==7?'active':''}}" data-current="7" bindtap="swichNav">其他</view> -->
   </scroll-view>
 
 

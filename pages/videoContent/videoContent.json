@@ -1,7 +1,3 @@
 {
-  "navigationBarBackgroundColor": "#E84A4C",
-  "navigationBarTextStyle": "white",
-  "navigationBarTitleText": "党校",
-  "backgroundColor": "#fff",
-  "backgroundTextStyle": "light"
+  "usingComponents": {}
 }

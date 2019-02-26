@@ -4,7 +4,7 @@
   box-sizing: border-box;
   overflow: hidden;
   line-height: 80rpx;
-  background: #f7f7f7;
+  background: #fff;
   font-size: 16px;
   white-space: nowrap;
   position: fixed;
@@ -14,8 +14,9 @@
 }
 
 .tab-item {
-  margin: 0 36rpx;
+  width: 25%;
   display: inline-block;
+  text-align: center;
 }
 
 .tab-item.active {
@@ -23,18 +24,6 @@ background-color:#ff8384;
   color: #fff;
   position: relative;
 }
-
-/* .tab-item.active:after {
-  content: "";
-  display: block;
-  height: 8rpx;
-  width: 140rpx;
-  background-color: #ff8384;
-  position: absolute;
-  bottom: 0;
-  left: 5rpx;
-  border-radius: 16rpx;
-} */
 
 .item-ans {
   width: 100%;

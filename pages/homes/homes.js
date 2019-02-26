@@ -18,6 +18,9 @@ Page({
     previousMargin: 0,
     nextMargin: 0
   },
+  onLoad: function(e) {
+    console.log(wx.getStorageInfoSync())
+  },
   //事件处理函数
   //通知公告
   bindViewTap: function () {
@@ -105,20 +108,6 @@ Page({
       url: '../MoreTabs/MoreTabs'
     })
   }, 
-
-  
-
-  // changeProperty: function (e) {
-  //   var propertyName = e.currentTarget.dataset.propertyName
-  //   var newData = {}
-  //   newData[propertyName] = e.detail.value
-  //   this.setData(newData)
-  // },
-  // changeIndicatorDots: function (e) {
-  //   this.setData({
-  //     indicatorDots: !this.data.indicatorDots
-  //   })
-  // },
   changeAutoplay: function (e) {
     this.setData({
       autoplay: !this.data.autoplay

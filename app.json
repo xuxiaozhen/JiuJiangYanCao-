@@ -44,12 +44,7 @@
     "pages/newHome/newHome",
     "pages/publicCotent/publicCotent",
     "pages/MenContent/MenContent",
-    "pages/videoContent/videoContent",
-    "pages/topicsContent/topicsContent",
-    "pages/beingContent/beingContent",
-    "pages/policyContent/policyContent",
-    "pages/meetNoteContent/meetNoteContent",
-    "pages/meetdetails/meetdetails"
+    "pages/videoContent/videoContent"
   ],
   "window": {
     "backgroundTextStyle": "light",
