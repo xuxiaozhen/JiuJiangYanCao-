@@ -3,52 +3,13 @@
   <view class="title">投票调研</view>
 
   <!-- 投票调研内容部分 -->
-  <navigator class="content-box" url="../../pages/voteAndResearchInfo/voteAndResearchInfo">
+  <navigator class="content-box"  wx:for="{{polingList}}" url="../../pages/voteAndResearchInfo/voteAndResearchInfo?id={{item.id}}">
     <view class="content">
-      <text>关于XXX的投票调研</text>
-      <text class="date">发起日期：2019-12-04</text>
+      <view>{{item.votename}}</view>
+      <text class="date">发起日期：{{item.createtime}}</text>
     </view>
     <image class="enter" src="../../icons/right-back.png"></image>
   </navigator>
 
-  <navigator class="content-box" url="../../pages/voteAndResearchInfo/voteAndResearchInfo">
-    <view class="content">
-      <text>关于XXX的投票调研</text>
-      <text class="date">发起日期：2019-12-04</text>
-    </view>
-    <image class="enter" src="../../icons/right-back.png"></image>
-  </navigator>
-
-  <navigator class="content-box">
-    <view class="content">
-      <text>关于XXX的投票调研</text>
-      <text class="date">发起日期：2019-12-04</text>
-    </view>
-    <image class="enter" src="../../icons/right-back.png"></image>
-  </navigator>
-
-  <navigator class="content-box">
-    <view class="content">
-      <text>关于XXX的投票调研</text>
-      <text class="date">发起日期：2019-12-04</text>
-    </view>
-    <image class="enter" src="../../icons/right-back.png"></image>
-  </navigator>
-
-  <navigator class="content-box">
-    <view class="content">
-      <text>关于XXX的投票调研</text>
-      <text class="date">发起日期：2019-12-04</text>
-    </view>
-    <image class="enter" src="../../icons/right-back.png"></image>
-  </navigator>
-
-  <navigator class="content-box">
-    <view class="content">
-      <text>关于XXX的投票调研</text>
-      <text class="date">发起日期：2019-12-04</text>
-    </view>
-    <image class="enter" src="../../icons/right-back.png"></image>
-  </navigator>
-
+ 
 </view>

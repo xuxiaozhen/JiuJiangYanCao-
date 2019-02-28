@@ -1,4 +1,5 @@
-// pages/newHome/newHome.js
+import { ARTICLEINFO } from '../../utils/path.js'
+
 Page({
 
   /**
@@ -12,7 +13,17 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+    wx.request({
+      url: ARTICLEINFO,
+      data: {
+        articleid: e.articleid
+      },
+      success: res => {
+        this.setData({
+          articleMsg: res.data.data
+        })
+      }
+    })
   },
 
   /**

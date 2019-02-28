@@ -1,17 +1,18 @@
-// pages/notice/notice.js
+import { ABOUTPARTY } from '../../utils/path.js'
+import { requestAboutNews } from '../../utils/request.js'
+
 var app = getApp();
 Page({
   data: {
     winHeight: "",//窗口高度
     currentTab: 1, //预设当前项的值
     scrollLeft: 0, //tab标题的滚动条位置
-    expertList: [{ //假数据
-      img: "avatar.png",
-      name: "欢顔",
-      tag: "知名情感博主",
-      answer: 134,
-      listen: 2234
-    }]
+
+    importantNewsList: [],  // 党建要闻数据列表
+    noticeList: [],   // 通知公告数据列表
+    placardList: [],  // 党内告示数据列表
+    partyHumanList: []  // 党史人物数据列表
+
   },
   // 滚动切换标签样式
   switchTab: function (e) {
@@ -19,6 +20,59 @@ Page({
       currentTab: e.detail.current
     });
     this.checkCor();
+
+    // 根据不同的"currentTab"，来发出不同type的请求
+    if (this.data.currentTab == 0) {
+      // 党建要闻请求
+      if (this.data.importantNewsList.length === 0) {
+        wx.request({
+          url: ABOUTPARTY,
+          data: {
+            programa: 1,
+            pageSize: 4
+          },
+          success: res => {
+            this.setData({
+              importantNewsList: res.data.list
+            })
+            console.log(this.data.importantNewsList)
+          }
+        })
+      }
+    } else if (this.data.currentTab == 2) {
+      // 党内公示请求
+      if (this.data.placardList.length === 0) {
+        wx.request({
+          url: ABOUTPARTY,
+          data: {
+            programa: 3
+          },
+          success: res => {
+            this.setData({
+              placardList: res.data.list
+            })
+            console.log(this.data.placardList)
+          }
+        })
+      }
+    } else if (this.data.currentTab == 3) {
+      // 党史人物请求
+      if (this.data.partyHumanList.length === 0) {
+        wx.request({
+          url: ABOUTPARTY,
+          data: {
+            programa: 4
+          },
+          success: res => {
+            this.setData({
+              partyHumanList: res.data.list
+            })
+            console.log(this.data.partyHumanList)
+          }
+        })
+      }
+    }
+
   },
   // 点击标题切换当前页时改变样式
   swichNav: function (e) {
@@ -42,11 +96,9 @@ Page({
       })
     }
   },
-    //跳转新闻内容详情  
-  bindViewTabContent:function(){
-wx.navigateTo({
-  url: '../newsContent/newsContent',
-})
+  // 跳转党内公示详情  
+  placardInfo: function(e){
+    console.log(e)
   },
   onLoad: function () {
     var that = this;
@@ -63,11 +115,18 @@ wx.navigateTo({
         });
       }
     });
+
+    // 发送请求数据
     wx.request({
-      url: 'http://192.168.11.108/zhyc/smallProgram/articleList?type=2&pageIndex=2&pageSize=10',
-      method: 'GET',
-      success: function(res) {
-        console.log(res)
+      url: ABOUTPARTY,
+      data: {
+        programa: 2
+      },
+      success: res=> {
+        this.setData({
+          noticeList: res.data.list
+        })
+        console.log(this.data.noticeList)
       }
     })
   },

@@ -31,16 +31,16 @@
 </view>
 
 
-<view class="announce" bindtap="bindViewTapVote">
+  <view class="announce" bindtap="bindViewTapVote">
   <image  class='icon' src="../../icons/resource24.png"></image>
    <view class="name" >投票调研</view>
    <image src="../../icons/right-back.png" class="r-back"> </image>
 </view>
 
-<navigator class="announce" url="../../pages/login/login">
+<view class="announce" bindtap="logout">
   <image  class='icon' src="../../icons/resource24.png"></image>
-   <view class="name" >login(测试用)</view>
+   <view class="name" >logout（测试用）</view>
    <image src="../../icons/right-back.png" class="r-back"> </image>
-</navigator>
+</view>
  
 </view>

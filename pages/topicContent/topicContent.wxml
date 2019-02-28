@@ -1,0 +1,23 @@
+<!--pages/topicContent/topicContent.wxml-->
+<!--pages/MenContent/MenContent.wxml-->
+
+<view class="container">
+  <view class="title">{{educationMsg.articlename}}</view>
+ <view class="footer">
+      <text>{{educationMsg.fbsj}}</text>
+      <navigator> {{educationMsg.deptid}}</navigator>
+     
+    </view>
+  <!-- 图片 -->
+  <view  class="qr-code" >
+  <image class='qr-img' ></image>
+  </view>
+
+  <!-- 底部的文字说明 -->
+  <view class="explanation">
+   
+   {{educationMsg.id}}
+ 
+   
+  </view>
+</view>

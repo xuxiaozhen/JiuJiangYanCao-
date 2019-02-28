@@ -1,40 +1,249 @@
-/* pages/meetNote/meetNote.wxss */
-/* pages/threeLessons/threeLessons.wxss */
-.tab{
-  display: flex;
+/* pages/OnlineTest/OnlineTest.wxss */
+.tab-h {
+  height: 80rpx;
   width: 100%;
-  height: 90rpx;
-  text-align: center;
-  /* background-color: pink; */
+  box-sizing: border-box;
+  overflow: hidden;
+  line-height: 80rpx;
+  background: #f7f7f7;
+  font-size: 16px;
+  white-space: nowrap;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 99;
 }
-.littleTab{
- flex-grow: 1;
- text-align: center;
- border-top:1px solid #e7e7e7;
- border-left: 1px solid #e7e7e7;
- border-bottom: 1px solid #e7e7e7;
-}
-.littleTab1{
- flex-grow: 1;
- text-align: center;
- border-top:1px solid #e7e7e7;
- border-left: 1px solid #e7e7e7;
- border-bottom: 1px solid #e7e7e7;
- background-color: #FF8384;
-}
-.name{
 
-font-size: 1.2rem;
+.tab-item {
+  text-align: center;
+  display: inline-block;
+  width: 25%;
 }
-.line{
+
+.tab-item.active {
+  background-color: #FF8385;
+  color: #fff;
+  position: relative;
+}
+/* 
+.tab-item.active:after {
+  content: "";
+  display: block;
+  height: 8rpx;
+  width: 140rpx;
+  background-color: #ff8384;
+  position: absolute;
+  bottom: 0;
+  left: 5rpx;
+  border-radius: 16rpx;
+} */
+
+.item-ans {
   width: 100%;
-  height: 30rpx;
-  background-color: #e7e7e7;
+  display: flex;
+  flex-grow: row no-wrap;
+  justify-content: space-between;
+  padding: 30rpx;
+  box-sizing: border-box;
+  height: 280rpx;
+  align-items: center;
+  border-bottom: 1px solid #f2f2f2;
 }
+
+.avatar {
+  width: 190rpx;
+  height: 200rpx;
+  position: relative;
+  padding-right: 30rpx;
+}
+
+.avatar .img {
+  width: 100%;
+  height: 100%;
+}
+
+.avatar .doyen {
+  width: 40rpx;
+  height: 40rpx;
+  position: absolute;
+  bottom: -2px;
+  right: 20rpx;
+}
+
+.expertInfo {
+  font-size: 12px;
+  flex-grow: 2;
+  color: #b0b0b0;
+  line-height: 1.5em;
+}
+
+.expertInfo .name {
+  font-size: 16px;
+  color: #000;
+  margin-bottom: 6px;
+}
+
+.askBtn {
+  width: 120rpx;
+  height: 60rpx;
+  line-height: 60rpx;
+  text-align: center;
+  font-size: 14px;
+  border-radius: 60rpx;
+  border: 1px solid #4675f9;
+  color: #4675f9;
+}
+
+.announce {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 100rpx;
+  margin: 30rpx 0 30rpx;
+  border-bottom: 1px solid #e7e7e7;
+  /* background-color: black;*/
+}
+
+.name {
+  margin-left: 10px;
+}
+
+.Div {
+  width: 100%;
+  height: 340rpx;
+  margin: 30rpx 0 30rpx;
+  border-bottom: 1px solid #e7e7e7;
+}
+
+.Div1 {
+  width: 100%;
+  height: 200rpx;
+  margin: 30rpx 0 30rpx;
+  border-bottom: 1px solid #e7e7e7;
+}
+
+.title {
+  margin-left: 30rpx;
+  font-size: 1.2rem;
+}
+
+.img {
+  margin-top: 5rpx;
+  margin-left: 30rpx;
+  /* text-align: center; */
+  width: 90%;
+  height: 200rpx;
+  background-color: #e5e5e5;
+}
+
+.noticeTime {
+  width: 90%;
+  height: 40rpx;
+  background-color: #fff;
+}
+
+.tl {
+  float: left;
+  width: 100%;
+}
+
+.come {
+  float: left;
+  width: 45%;
+  margin-left: 20rpx;
+  font-size: 0.6rem;
+  color: #a89494;
+}
+
+.time {
+  float: right;
+  text-align: right;
+  width: 45%;
+  font-size: 0.6rem;
+  color: #a89494;
+}
+
+.img1 {
+  margin-top: 5rpx;
+  margin-left: 30rpx;
+  float: left;
+  width: 40%;
+  height: 200rpx;
+  background-color: #e5e5e5;
+}
+
+.article {
+  float: left;
+  width: 100%;
+  height: 150rpx;
+  line-height: 150rpx;
+  /* background-color: #E5E5E5; */
+  text-align: center;
+  font-size: 1.4rem;
+}
+
+.tab-content {
+  margin-top: 80rpx;
+}
+
+.scoll-h {
+  height: 100%;
+}
+
+.xian {
+  width: 10rpx;
+  height: 40rpx;
+  background-color: red;
+  margin-left: 15px;
+}
+/* 下方内容区域样式 */
+.content {
+  width: 100%;
+  padding: 0 15rpx;
+  box-sizing: border-box;
+}
+/* 小标题样式 */
+.content .title {
+  padding-left: 20rpx;
+  display: flex;
+  align-items: center;
+  height: 80rpx;
+  font-size: 16px;
+}
+.content .title text {
+  margin-left: 5%;
+  position: relative;
+}
+.content .title text::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 10%;
+  left: -25%;
+  width: 7rpx;
+  height: 35rpx;
+  background-color: #E84A4C;
+}
+/* 视屏区域样式 */
+.video-box {
+  width: 100%;
+  box-sizing: border-box;
+  height: 400rpx;
+  border-top: 1rpx solid #ccc;
+  border-bottom: 1rpx solid #ccc;
+  padding: 15rpx 20rpx;
+}
+.video-box .video {
+  width: 100%;
+  height: 100%;
+  background-color: pink;
+}
+
+/* 三会一课样式 */
 .bg{
   display: flex;
   width: 100%;
-  height: 150rpx;
+  height: 100rpx;
 text-align: center;
 }
 .meetNote{
@@ -46,8 +255,10 @@ text-align: center;
 .meetNote1{
   align-content: center;
   flex-grow: 1;
-   border-bottom: 2px solid#FF8384;
-  /* background-color: #FF8384; */
+  color: #fff;
+  background-color: #FF8384;
+   /* border-bottom: 2px solid#FF8384; */
+
 }
 .name1{
   font-size: 1.2rem;
@@ -56,15 +267,16 @@ padding: auto auto;
 .content{
   margin-top: 5px;
   width: 100%;
-  height: 200rpx;
+  height: 150rpx;
   align-items: center;
    border-bottom: 2px solid#e7e7e7;
   /* background-color: #FF8384; */
 }
 .meet{
+
   float: left;
     width: 80%;
-  font-size: 1.2rem;
+  /* font-size: rem; */
 }
 .over{
   float: left;
@@ -78,14 +290,17 @@ padding: auto auto;
     width: 20%;
     height: 60rpx;
    font-size: 0.6rem;
-  color: #FF8384;
+  /* color: #FF8384; */
 }
 .note{
   width: 100%;
-  margin-top: 4px;
+  font-size: 0.7rem;
+ margin-left: 20rpx;
+  /* margin-top: 4px; */
 }
 .time{
   float: left;
+  width: 60%;
   font-size: 0.6rem;
   color: #ccc;
 }
@@ -93,29 +308,89 @@ padding: auto auto;
 float: right;
   font-size: 0.6rem;
   color: #ccc;
+
+}
+/* 专题教育新闻相关样式 */
+
+.topicBg {
+  width: 100%;
+  height: 300rpx;
+  background-color: #fff;
+  border-bottom: 1px solid #e5e5e5;
+  margin-bottom: 10px;
 }
 
-.time1{
-float: right;
-  font-size: 0.6rem;
+.titleName {
+  float: left;
+  text-align: center;
+  width: 50%;
+  height: 80%;
+  background-color: #fff;
+}
+
+.title {
+  margin-top: 40rpx;
+  font-size: 1.2rem;
+}
+
+.pic {
+  right: 2px;
+  float: left;
+  width: 48%;
+  height: 80%;
+  background-color: #e7e7e7;
+}
+
+.topicFoot {
+  float: left;
+  width: 100%;
+  height: 20%;
+  background-color:#fff;
+  }
+
+.topicTime {
+  float: left;
+  left: 3px;
+  width: 45%;
+  height: 100%;
+  text-align: right;
+}
+
+.topicCount {
+  float: left;
+  right: 3px;
+  width: 45%;
+  height: 100%;
+  text-align: right;
+}
+
+.time2 {
+  font-size: 0.7rem;
+  color: #dcc;
+}
+/* 防腐倡廉 样式*/
+.titleName1{
+  float: left;
+  width: 100%;
+  height: 40%;
+}
+ .pic1{
+  float: left;
+  width: 100%;
+  height: 40%;
+  font-size: 0.9rem;
   color: #ccc;
+}
+/* 在线考试 */
+.OnlineTestImg{
+margin-left: 10px;
+  width: 90%;
+  height: 600rpx;
+  background-color: pink;
+}
+/* button{
+  background-color: #FF8384;
+} */
 
-}
-.newmeet{
-    display: flex;
-     align-items: center;
-     position: relative;
-    width: 100%;
-     height: 120rpx;
-     margin: 30rpx 0 30rpx;
-     border-bottom: 1px solid #e7e7e7;
-     background: white;
-}
-.r-back{
-    position: absolute;
-    top:50%;
-    margin-top:-14rpx;
-    right:30rpx;
-    width: 15rpx;
-    height: 28rpx;
-}
+
+

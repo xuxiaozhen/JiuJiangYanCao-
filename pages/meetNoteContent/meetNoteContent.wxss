@@ -1,0 +1,34 @@
+/* pages/meetNoteContent/meetNoteContent.wxss */
+.note {
+  width: 100%;
+  height: 90rpx;
+  text-align: center;
+  border-bottom: 2px solid #ccc;
+}
+
+/* .name {
+  font-size: rem;
+} */
+
+.content {
+  margin-top: 5px;
+  width: 100%;
+  height: 900%;
+  border-bottom: 1px solid #ccc;
+}
+
+/* .foot {
+  margin-top: 10px;
+  width: 100%;
+  height: 120rpx;
+}
+
+.name1 {
+  text-align: right;
+  height: 60rpx;
+}
+
+.time {
+  text-align: right;
+  height: 60rpx;
+} */

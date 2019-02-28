@@ -1,18 +1,34 @@
 // pages/voteAndResearch/voteAndResearch.js
+import{POLING} from '../../utils/path.js'
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-
+    //投票调研数据列表
+polingList:[]
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
-  onLoad: function (options) {
-
+  onLoad: function (e) {
+    if (this.data.polingList.length === 0) {
+wx.request({
+  url: POLING,
+  data:{
+    currentPage:1,
+    pageRecord:10
+  },
+  success: res => {
+    this.setData({
+      polingList: res.data.list
+    })
+    console.log(this.data.polingList)
+  }
+})
+  }
   },
 
   /**

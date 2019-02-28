@@ -2,148 +2,20 @@
 <!-- 小图标部分 -->
 <view class='foot'>
 
-<view class='footIcon'>
-<!-- -->
-<view class="wxicon"  bindtap="bindViewTap">
- <image src="../../icons/img1.png" class='img'>
- </image> 
- <view class='word'>通知公告</view>
-</view>
-</view>
-
-<view class='footIcon'>
-<!-- -->
-<view class="wxicon"  bindtap="bindViewTap1">
- <image src="../../icons/img9.png" class='img'>
- </image> 
- <view class='word'>微党课</view>
-</view>
+<view class="container">
+    <view class="weui-grids">
+        <view class="weui-grid" wx:for="{{routers}}" wx:key="name">
+            <navigator url="{{item.url+'?name='+item.name+'&code='+item.code}}" open-type="redirect">
+                <view class='weui-grid__bg'>
+                    <view class="weui-grid__icon">
+                        <image src=" {{item.icon}}" mode="scaleToFill" />
+                    </view>
+                    <text class="weui-grid__label">{{item.name}}</text>
+                </view>
+            </navigator>
+        </view>
+    </view>
 </view>
 
-<view class='footIcon'>
-<!-- -->
-<view class="wxicon"  bindtap="bindViewTapThree">
- <image src="../../icons/img3.png" class='img'>
- </image> 
- <view class='word'>三会一课</view>
-</view>
-</view>
-
-<view class='footIcon'>
-<!-- -->
-<view class="wxicon"  bindtap="bindViewTapTest">
- <image src="../../icons/img4.png" class='img'>
- </image> 
- <view class='word'>在线考试</view>
-</view>
-</view>
-
-
-<view class='footIcon'>
-<!-- -->
-<view class="wxicon"  bindtap="bindViewTapvideos">
- <image src="../../icons/img5.png" class='img'>
- </image> 
- <view class='word'>党员档案</view>
-</view>
-</view>
-
-
-<view class='footIcon'>
-<!-- -->
-<view class="wxicon"  bindtap="bindViewTapmyIntegral">
- <image src="../../icons/img6.png" class='img'>
- </image> 
- <view class='word'>我的积分</view>
-</view>
-</view>
-
-
-
-<view class='footIcon'>
-<!-- -->
-<view class="wxicon"  bindtap="bindViewTapcommemorate">
- <image src="../../icons/img7.png" class='img'>
- </image> 
- <view class='word'>入党纪念</view>
-</view>
-</view>
-
-
-<view class='footIcon'>
-<!-- -->
-<view class="wxicon"  bindtap='bindViewTapMen'>
- <image src="../../icons/img8.png" class='img'>
- </image> 
- <view class='word'>党史人物</view>
-</view>
-</view>
-
-<view class='footIcon'>
-<!-- -->
-<view class="wxicon"  bindtap="bindViewTap">
- <image src="../../icons/img9.png" class='img'>
- </image> 
- <view class='word'>大屏互动</view>
-</view>
-</view>
-
-<view class='footIcon'>
-<!-- -->
-<view class="wxicon"  bindtap="bindViewTap2">
- <image src="../../icons/img9.png" class='img'>
- </image> 
- <view class='word'>党建要闻</view>
-</view>
-</view>
-
-
-<view class='footIcon'>
-<!-- -->
-<view class="wxicon"  bindtap="bindViewTappartyMoney">
- <image src="../../icons/img11.png" class='img'>
- </image> 
- <view class='word'>党费收缴</view>
-</view>
-</view>
-
-
-<view class='footIcon'>
-<!-- -->
-<view class="wxicon"  bindtap="bindViewTap">
- <image src="../../icons/igm12.png" class='img'>
- </image> 
- <view class='word'>党员论坛</view>
-</view>
-</view>
-
-
-<view class='footIcon'>
-<!-- -->
-<view class="wxicon"  bindtap="bindViewTaptaskManagement ">
- <image src="../../icons/img13.png" class='img'>
- </image> 
- <view class='word'>任务管理</view>
-</view>
-</view>
-
-
-<view class='footIcon'>
-<!-- -->
-<view class="wxicon"  bindtap="bindViewTapTopic">
- <image src="../../icons/img14.png" class='img'>
- </image> 
- <view class='word'>专题教育</view>
-</view>
-</view>
-
-<view class='footIcon'>
-<!-- -->
-<view class="wxicon"  bindtap="bindViewTapMore">
- <image src="../../icons/img15.png" class='img'>
- </image> 
- <view class='word'>更多</view>
-</view>
-</view>
 
 </view>

@@ -3,7 +3,7 @@ var app = getApp();
 Page({
   data: {
     winHeight: "",//窗口高度
-    currentTab: 0, //预设当前项的值
+    currentTab: 3, //预设当前项的值
     scrollLeft: 0, //tab标题的滚动条位置
     expertList: [{ //假数据
       img: "avatar.png",

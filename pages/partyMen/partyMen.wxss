@@ -14,13 +14,14 @@
 }
 
 .tab-item {
-  margin: 0 36rpx;
+  text-align: center;
   display: inline-block;
+  width: 25%;
 }
 
 .tab-item.active {
+  background-color: #FF8385;
   color: #fff;
-    background-color: #ff8384;
   position: relative;
 }
 

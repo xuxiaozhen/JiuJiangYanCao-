@@ -1,0 +1,14 @@
+<!--pages/policyContent/policyContent.wxml-->
+<view class='note'>
+<text class='name'>{{policyMsg.articlename}}</text>
+</view>
+<view class='content'>
+<text>
+{{policyMsg.id}}
+</text>
+</view>
+<view class='foot'>
+<view class='name1'>XXX部</view>
+<view class='time'>{{policyMsg.fbsj}}</view>
+</view>
+

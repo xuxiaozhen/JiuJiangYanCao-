@@ -1,3 +1,4 @@
+/* pages/OnlineTest/OnlineTest.wxss */
 .tab-h {
   height: 80rpx;
   width: 100%;
@@ -24,6 +25,18 @@
   color: #fff;
   position: relative;
 }
+/* 
+.tab-item.active:after {
+  content: "";
+  display: block;
+  height: 8rpx;
+  width: 140rpx;
+  background-color: #ff8384;
+  position: absolute;
+  bottom: 0;
+  left: 5rpx;
+  border-radius: 16rpx;
+} */
 
 .item-ans {
   width: 100%;
@@ -90,6 +103,15 @@
   border-bottom: 1px solid #e7e7e7;
   /* background-color: black;*/
 }
+.announce1 {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 100rpx;
+  margin-left: 30rpx;
+  /* border-bottom: 1px solid #e7e7e7; */
+  /* background-color: black;*/
+}
 
 .name {
   margin-left: 10px;
@@ -102,16 +124,22 @@
   border-bottom: 1px solid #e7e7e7;
 }
 
-.Div1 {
+.Divnote{
+  width: 100%;
+  height: 100rpx;
+  margin: 30rpx 0 30rpx;
+  border-bottom: 1px solid #e7e7e7;
+}
+/* .Div1 {
   width: 100%;
   height: 200rpx;
   margin: 30rpx 0 30rpx;
   border-bottom: 1px solid #e7e7e7;
-}
+} */
 
 .title {
-  margin-left: 30rpx;
-  font-size: 1.2rem;
+  margin-left: 10rpx;
+  /* font-weight: bold; */
 }
 
 .img {
@@ -142,7 +170,7 @@
   color: #a89494;
 }
 
-.time {
+.time3 {
   float: right;
   text-align: right;
   width: 45%;
@@ -230,7 +258,7 @@
 .bg{
   display: flex;
   width: 100%;
-  height: 150rpx;
+  height: 90rpx;
 text-align: center;
 }
 .meetNote{
@@ -242,8 +270,10 @@ text-align: center;
 .meetNote1{
   align-content: center;
   flex-grow: 1;
-   border-bottom: 2px solid#FF8384;
-  /* background-color: #FF8384; */
+  color: #fff;
+  background-color: #FF8384;
+   /* border-bottom: 2px solid#FF8384; */
+
 }
 .name1{
   font-size: 1.2rem;
@@ -252,15 +282,16 @@ padding: auto auto;
 .content{
   margin-top: 5px;
   width: 100%;
-  height: 200rpx;
+  height: 150rpx;
   align-items: center;
    border-bottom: 2px solid#e7e7e7;
   /* background-color: #FF8384; */
 }
 .meet{
+
   float: left;
     width: 80%;
-  font-size: 1.2rem;
+  /* font-size: rem; */
 }
 .over{
   float: left;
@@ -274,14 +305,17 @@ padding: auto auto;
     width: 20%;
     height: 60rpx;
    font-size: 0.6rem;
-  color: #FF8384;
+  /* color: #FF8384; */
 }
 .note{
   width: 100%;
-  margin-top: 4px;
+  font-size: 0.7rem;
+ margin-left: 20rpx;
+  /* margin-top: 4px; */
 }
 .time{
   float: left;
+  width: 60%;
   font-size: 0.6rem;
   color: #ccc;
 }
@@ -362,6 +396,66 @@ float: right;
   font-size: 0.9rem;
   color: #ccc;
 }
+/* 政策法规 */
+.Div {
+  width: 100%;
+  height: 340rpx;
+  margin: 30rpx 0 30rpx;
+  border-bottom: 1px solid #e7e7e7;
+}
+.Divnote{
+  width: 100%;
+  height: 100rpx;
+  margin: 30rpx 0 30rpx;
+  border-bottom: 1px solid #e7e7e7;
+}
+.Div1 {
+  width: 100%;
+  height: 200rpx;
+  margin: 30rpx 0 30rpx;
+  border-bottom: 1px solid #e7e7e7;
+}
+
+.titlenote {
+  margin-left: 10rpx;
+  /* font-weight: bold; */
+}
+
+.img {
+  margin-top: 5rpx;
+  margin-left: 30rpx;
+  /* text-align: center; */
+  width: 90%;
+  height: 200rpx;
+  background-color: #e5e5e5;
+}
+
+.noticeTime {
+  width: 90%;
+  height: 40rpx;
+  background-color: #fff;
+}
+
+.tl {
+  float: left;
+  width: 100%;
+}
+
+.come {
+  float: left;
+  width: 45%;
+  margin-left: 20rpx;
+  font-size: 0.6rem;
+  color: #a89494;
+}
+
+.time3 {
+  float: right;
+  text-align: right;
+  width: 45%;
+  font-size: 0.6rem;
+  color: #a89494;
+}
 /* 在线考试 */
 .OnlineTestImg{
 margin-left: 10px;
@@ -369,9 +463,9 @@ margin-left: 10px;
   height: 600rpx;
   background-color: pink;
 }
-button{
+/* button{
   background-color: #FF8384;
-}
+} */
 
 
 

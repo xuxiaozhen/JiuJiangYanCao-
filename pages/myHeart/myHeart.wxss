@@ -28,3 +28,25 @@
   padding: 30rpx;
   width: 100%;
 }
+
+.announce{
+    display: flex;
+     align-items: center;
+     position: relative;
+    width: 98%;
+     height: 100rpx;
+     margin: 30rpx 0 30rpx;
+     border-bottom: 1px solid #e7e7e7;
+     background: white;
+}
+.name{
+  margin-left: 10px;
+}
+.r-back{
+    position: absolute;
+    top:50%;
+    margin-top:-14rpx;
+    right:30rpx;
+    width: 15rpx;
+    height: 28rpx;
+}

@@ -1,14 +1,14 @@
 <view class="container">
-  <view class="title">关于XXX的投票</view>
-  <textarea placeholder="内容介绍"></textarea>
+  <view class="title">关于{{poingMsg.votename}}的投票</view>
+  <textarea placeholder="内容介绍">{{poingMsg.content}}</textarea>
 
   <!-- 单选框 -->
-    <radio-group class="radio-box">
-      <radio value="支持"><text class="radio-content">支持</text></radio>
+    <radio-group class="radio-box" bindChange="radioChange">
+      <radio value="支持" ><text class="radio-content">支持</text></radio>
       <radio value="反对"><text class="radio-content">反对</text></radio>
       <radio value="弃票"><text class="radio-content">弃票</text></radio>
     </radio-group>
 
     <!-- 提交按钮 -->
-    <button class="sub-btn" type="primary">提交投票</button>
+    <button class="sub-btn" type="primary" bindtap='voting'>提交投票</button>
 </view>

@@ -1,17 +1,36 @@
+import { ARTICLEINFO } from '../../utils/path.js'
+
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    
+    articleMsg: {}
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
-  onLoad: function (options) {
-    
+  onLoad: function (e) {
+    wx.request({
+      url: ARTICLEINFO,
+      data: {
+        articleid: e.articleid
+      },
+      success: res => {
+        this.setData({
+          articleMsg: res.data.data
+        })
+        console.log(this.data.articleMsg)
+      },
+      fail: () => {
+        wx.showToast({
+          title: '服务器正忙，请稍后再试',
+          icon: 'none',
+        })
+      }
+    })
   },
 
   /**

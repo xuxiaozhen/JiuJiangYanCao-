@@ -1,0 +1,83 @@
+/* pages/meetdetails/meetdetails.wxss */
+
+.container {
+  float: left;
+  width: 100%;
+  height: 520rpx;
+  /* background-color: pink; */
+}
+
+.meetName {
+  float: left;
+  width: 100%;
+  height: 90rpx;
+  font-size: 1rem;
+}
+
+.meetContent {
+  float: left;
+  width: 100%;
+  height: 350rpx;
+  color: #ccc;
+  /* background-color: red; */
+}
+
+.details {
+  float: left;
+  width: 100%;
+  height: 200rpx;
+  border-bottom: 15px solid #ccc;
+}
+
+.footer {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100rpx;
+  box-sizing: border-box;
+  padding: 0 30rpx;
+  border-bottom: 1px solid #ccc;
+}
+
+.footer navigator {
+  color: #6a7fa5;
+  margin-left: 40%;
+}
+
+.footer image {
+  width: 20rpx;
+  height: 20rpx;
+}
+
+.announce {
+  display: flex;
+  align-items: center;
+  position: relative;
+  width: 98%;
+  height: 100rpx;
+  margin: 30rpx 0 30rpx;
+  border-bottom: 1px solid #e7e7e7;
+  background: white;
+}
+
+.name {
+  margin-left: 10px;
+}
+
+.r-back {
+  position: absolute;
+  top: 50%;
+  margin-top: -14rpx;
+  right: 30rpx;
+  width: 15rpx;
+  height: 28rpx;
+}
+
+/* huiyiziliao */
+
+meet {
+  width: 90rpx;
+  height: 90rpx;
+background-color: #CCc;
+}

@@ -1,0 +1,47 @@
+/* pages/topicContent/topicContent.wxss */
+/* pages/MenContent/MenContent.wxss */
+.title {
+  height: 100rpx;
+  width: 100%;
+  line-height: 100rpx;
+  text-align: center;
+  font-size: 40rpx;
+  /* border-bottom: 1rpx solid #ccc; */
+}
+
+
+/* 图片样式 */
+.qr-code {
+  width: 600rpx;
+  height: 500rpx;
+  background-color: #e7e7e7;
+  margin: 20rpx auto;
+}
+.qr-code .qr-img{
+  width: 400rpx;
+  height: 100%;
+  margin-left: 90rpx;
+}
+.footer {
+  /* border-top: 1rpx solid #ccc; */
+  border-bottom: 1rpx solid #e5e5e5;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80rpx;
+  box-sizing: border-box;
+  padding: 0 30rpx;
+}
+.footer navigator {
+  color: #6A7FA5;
+  margin-left: 50%;
+}
+
+
+/* 底部的文字说明 */
+.explanation  {
+  padding: 0;
+  color: #ADADAD;
+  font-size: 16px;
+}

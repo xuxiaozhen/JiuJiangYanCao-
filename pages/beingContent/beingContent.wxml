@@ -1,0 +1,25 @@
+<!--pages/beingContent/beingContent.wxml-->
+<!--pages/topicContent/topicContent.wxml-->
+<!--pages/MenContent/MenContent.wxml-->
+
+<view class="container">
+  <view class="title">{{beingMsg.articlename}}</view>
+ <view class="footer">
+      <text>{{beingMsg.fbsj}}</text>
+      <navigator>{{beingMsg.deptid}}</navigator>
+     
+    </view>
+  <!-- 图片 -->
+  <view  class="qr-code" >
+  <image class='qr-img' ></image>
+  </view>
+
+  <!-- 底部的文字说明 -->
+  <view class="explanation">
+   
+  {{beingMsg.id}} 
+ 
+   
+  </view>
+</view>
+

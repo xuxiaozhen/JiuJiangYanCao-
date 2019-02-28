@@ -1,18 +1,30 @@
 // pages/videoContent/videoContent.js
+import { ARTICLEINFO } from '../../utils/path.js'
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-
+    videosMsg: {}
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
-  onLoad: function (options) {
-
+  onLoad: function (e) {
+    wx.request({
+      url: ARTICLEINFO,
+      data: {
+        articleid: e.id
+      },
+      success: res => {
+        this.setData({
+          videosMsg: res.data.data
+        })
+        console.log(this.data.videosMsg)
+      }
+    })
   },
 
   /**

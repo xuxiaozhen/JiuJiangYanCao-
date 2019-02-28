@@ -9,3 +9,25 @@
   <!-- 输入内容 -->
   <textarea class="input-content" placeholder="输入内容"></textarea>
 </view>
+
+
+ <view class="announce" bindtap="bindViewTapHeartPerson">
+   <view class="name" >2018-12-12号记录</view>
+   <image src="../../icons/right-back.png" class="r-back"> </image>
+</view>
+ <view class="announce" bindtap="bindViewTapHeartPerson">
+   <view class="name" >2018-12-12号记录</view>
+   <image src="../../icons/right-back.png" class="r-back"> </image>
+</view>
+ <view class="announce" bindtap="bindViewTapHeartPerson">
+   <view class="name" >2018-12-12号记录</view>
+   <image src="../../icons/right-back.png" class="r-back"> </image>
+</view>
+ <view class="announce" bindtap="bindViewTapHeartPerson">
+   <view class="name" >2018-12-12号记录</view>
+   <image src="../../icons/right-back.png" class="r-back"> </image>
+</view>
+ <view class="announce" bindtap="bindViewTapHeartPerson">
+   <view class="name" >2018-12-12号记录</view>
+   <image src="../../icons/right-back.png" class="r-back"> </image>
+</view>
